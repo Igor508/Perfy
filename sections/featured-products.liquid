@@ -1,0 +1,120 @@
+<div class="container pt-16">
+  {% if section.settings.title != blank %}
+    <h2 class="text-center font-heading font-bold h2">{{ section.settings.title }}</h2>
+  {% endif %}
+
+  {% if section.blocks.size > 0 %}
+  <div class="product-carousel row" data-section-type="product-carousel" data-section-id="{{ section.id }}">
+    <div class="glide relative {% if section.blocks.size < 5 %} no-glide {% endif %}">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides mx-auto">
+
+          {%- assign slide_count = 0 -%}
+
+          {% for block in section.blocks %}
+            {% assign _product = block.settings.product %}
+
+            {%- if product.handle == _product.handle -%}
+              {%- continue -%}
+            {%- endif -%}
+
+            {%- assign _v =  _product.selected_or_first_available_variant -%}
+
+            <li class="glide__slide my-8 group" data-slide-index="={{ slide_count }}">
+              <a href="{{ _v.url }}" title="{{ _product.title }}" class="aspect-h-8 aspect-w-7 block w-full">
+                <img
+                  class="object-contain object-center transition-all ease-in-out duration-1000 group-hover:scale-105 group-focus:scale-105 group-hover:rotate-6"
+                  alt="{{ _product.title }}"
+                  src="{{ _product.featured_image | image_url: width: 125 }}"
+                  width="{{ _product.featured_image.width }}"
+                  height="{{ _product.featured_image.height }}"
+                  srcset="{% render 'srcset', image: _product.featured_image %}"
+                  loading="lazy"
+                >
+              </a>
+
+              <a href="{{ _v.url }}" title="{{ _product.title }}" class="block text-center">
+                <div class="mx-auto h5 mt-6 mb-3 font-bold">
+                  {{ _product.title }}
+                </div>
+
+                <div class="text-base">
+                  {%- if _product.compare_at_price -%}
+                    <s class="opacity-50 inline-block mr-3">{{ _product.compare_at_price | money_without_trailing_zeros }}</s>
+                  {%- endif -%}
+
+                  {{ _product.price_min | money_without_trailing_zeros }}
+                </div>
+              </a>
+            </li>
+
+            {%- assign slide_count = slide_count | plus: 1 -%}
+          {% endfor %}
+
+        </ul>
+      </div>
+
+      <div class="glide__bullets {% if section.blocks.size < 5 %} md:hidden {% endif %}" data-glide-el="controls[nav]">
+        {%- assign slide_count = 0 -%}
+
+        {%- for block in section.blocks -%}
+          {% assign _product = block.settings.product %}
+
+          {%- if product.handle == _product.handle -%}
+            {%- continue -%}
+          {%- endif -%}
+
+          <button class="glide__bullet" data-glide-dir="={{ slide_count }}"></button>
+
+          {%- assign slide_count = slide_count | plus: 1 -%}
+        {%- endfor -%}
+      </div>
+
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Featured Products",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Find The Perfect Flavor",
+      "label": "Section Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Products",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

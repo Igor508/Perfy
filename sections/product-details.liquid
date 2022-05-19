@@ -1,0 +1,74 @@
+<div class="container pt-4 sm:pt-24 pb-10 grid gap-8 grid-cols-1 md:grid-cols-2" data-section-type="product-details" data-section-id="{{ section.id }}">
+
+    <div class="product-description">
+
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'description' %}
+                    <div class="rte p-lg">
+                        {{ product.description }}
+                    </div>
+                {% when '@app' %}
+                    {% render block %}
+            {% endcase %}
+        {%- endfor -%}
+
+    </div>
+
+    <div class="product-accordion border-2 border-purple-dark rounded-lg bg-white shadow-purple p-9">
+
+        {%- for block in section.blocks -%}
+            {% case block.type %}
+                {% when 'accordion_row' %}
+                    {%- assign accordion_row_id = 'accordion-' | append: forloop.index0 -%}
+
+                    {%
+                      render 'accordion-row',
+                      _id: accordion_row_id,
+                      _open: block.settings.open,
+                      _accordion_title: block.settings.accordion_title,
+                      _accordion_content: block.settings.accordion_content %}
+            {% endcase %}
+        {%- endfor -%}
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product details",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "description",
+      "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
+    },
+    {
+      "type": "accordion_row",
+      "name": "t:sections.main-product.blocks.accordion_row.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "accordion_title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "accordion_content",
+          "label": "Content"
+        },
+        {
+          "type": "checkbox",
+          "id": "open",
+          "label": "Open by default?",
+          "default": false
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

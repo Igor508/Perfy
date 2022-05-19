@@ -1,0 +1,96 @@
+{
+  "sections": {
+    "1642538067ac9c8358": {
+      "type": "page-hero",
+      "disabled": true,
+      "settings": {
+        "bg_gradient": "orange_to_yellow",
+        "extra_bottom_padding": false,
+        "image": "shopify:\/\/shop_images\/Blood_Orange.png",
+        "hide_image_mobile": true,
+        "title": "Find Perdy Neary You",
+        "display_size": false,
+        "content": "",
+        "cta_label": "",
+        "cta_url": ""
+      }
+    },
+    "1642538123458451ba": {
+      "type": "page-content",
+      "settings": {
+        "extra_padding": true,
+        "hide_upper_curve": true,
+        "hide_lower_curve": true,
+        "background_color": "bg-transparent",
+        "alignment": "center"
+      }
+    },
+    "164262349272a8ea67": {
+      "type": "page-about--tribute",
+      "disabled": true,
+      "blocks": {
+        "d230e1b2-9391-40dc-88e3-5b782723b8c4": {
+          "type": "name",
+          "settings": {
+            "title": "Placeholder Name"
+          }
+        },
+        "c3d40750-12bd-4f9b-be9f-a28ececafab5": {
+          "type": "name",
+          "settings": {
+            "title": "Placeholder Name"
+          }
+        },
+        "319a846c-69cb-415e-ba75-0bdb014c4cfb": {
+          "type": "name",
+          "settings": {
+            "title": "Placeholder Name"
+          }
+        },
+        "57e8fdb2-a0c4-45f8-abbb-f326bdca5999": {
+          "type": "name",
+          "settings": {
+            "title": "Placeholder Name"
+          }
+        },
+        "a1378dd1-dc20-4514-8329-3fe9a103e024": {
+          "type": "name",
+          "settings": {
+            "title": "Placeholder Name"
+          }
+        }
+      },
+      "block_order": [
+        "d230e1b2-9391-40dc-88e3-5b782723b8c4",
+        "c3d40750-12bd-4f9b-be9f-a28ececafab5",
+        "319a846c-69cb-415e-ba75-0bdb014c4cfb",
+        "57e8fdb2-a0c4-45f8-abbb-f326bdca5999",
+        "a1378dd1-dc20-4514-8329-3fe9a103e024"
+      ],
+      "settings": {
+        "extra_top_padding": false,
+        "image": "shopify:\/\/shop_images\/IMG_4391.jpg",
+        "caption": "My best friend, Scott",
+        "title": "Memorialize your loved one lost by overdose or suicide.",
+        "form_snippet": ""
+      }
+    },
+    "1644524662327b0183": {
+      "type": "cta-content",
+      "settings": {
+        "title": "",
+        "button_link": "https:\/\/forms.westock.io\/brand\/1035?source=website&medium=website",
+        "button_text": "Request Perfy in store",
+        "button_style": "btn-primary",
+        "button_use_border": true,
+        "vertical_padding": "none"
+      }
+    }
+  },
+  "order": [
+    "1642538067ac9c8358",
+    "1642538123458451ba",
+    "164262349272a8ea67",
+    "1644524662327b0183"
+  ]
+}

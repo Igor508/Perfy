@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "page": {
+      "type": "main-page",
+      "settings": {
+        "title": "",
+        "text_alignment": "text-center"
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "0f9da556-51eb-4d10-b35b-8ce838d3d5cc": {
+          "type": "faq",
+          "settings": {
+            "title": "What does Perfy mean?",
+            "content": "<p>When I was younger I used to call my mom \"perfy.\" I wasn't able to pronounce perfect or pretty or somethin'. So when she told me this story in early 2021, I immediately changed the brand's name to Perfy in honor of her.<\/p>"
+          }
+        },
+        "4c5fd457-7d2b-410c-90c4-675eb6a52232": {
+          "type": "faq",
+          "settings": {
+            "title": "What is Perfy?",
+            "content": "<p>Perfy is a delicious brain-boosting soda enhanced with nootropics & adaptogens and only 3g-4g sugar per can. <\/p>"
+          }
+        },
+        "fd13f47c-21b0-4267-a4b0-1fd472d26ed0": {
+          "type": "faq",
+          "settings": {
+            "title": "Why Perfy?",
+            "content": "<p>Traditional soda and diet soda are loaded with junk ingredients like cane sugar, high fructose corn syrup, artificial flavors, colors, and sweeteners, and even preservatives. Perfy doesn't have any of that. We made it with the best possible ingredients so you can enjoy soda again without wrecking your blood sugar. <\/p>"
+          }
+        },
+        "5b50b923-7d1a-40b2-b8da-c849096f7818": {
+          "type": "faq",
+          "settings": {
+            "title": "How do you calculate the net carbs?",
+            "content": "<p>Total carbs - fiber - sugar alcohols - allulose = net carbs.<\/p><p><\/p><p>Fruit Punch: 6g - 0g - 0g - 1.4g = 4.6g (or 5g) net carbs<\/p><p>Tropical Citrus: 5g - 0g - 0g - 1.4g = 3.6g (or 4g) net carbs  <\/p><p>Blood Orange Yuzu: 7g - 0g - 0g - 3g = 4g net carbs<\/p>"
+          }
+        },
+        "805bfaa7-2ece-4bd8-8633-52d9d906e57a": {
+          "type": "faq",
+          "settings": {
+            "title": "What is L-Theanine?",
+            "content": "<p>An amino acid commonly found in tea  that is known to support stress and anxiety while also increasing focus and improving blood pressure.*<\/p><p><\/p><p><a href=\"https:\/\/apjcn.nhri.org.tw\/server\/APJCN\/17%20Suppl%201\/167.pdf\" target=\"_blank\" title=\"https:\/\/apjcn.nhri.org.tw\/server\/APJCN\/17%20Suppl%201\/167.pdf\"><strong>Learn More<\/strong><\/a><\/p><p><\/p><p><em>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.<\/em><\/p>"
+          }
+        },
+        "b560295a-a1f7-47f8-8083-121ba3445cf2": {
+          "type": "faq",
+          "settings": {
+            "title": "What is Ashwagandha?",
+            "content": "<p>Ashwagandha is one of the most important herbs in Ayurveda, which is a traditional form of alternative medicine based on Indian principles of natural healing.<\/p><p>People have used ashwagandha for thousands of years to relieve stress, increase energy levels, and improve concentration.*<\/p><p><\/p><p><a href=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/32201301\/\" target=\"_blank\" title=\"https:\/\/pubmed.ncbi.nlm.nih.gov\/32201301\/\"><strong>Learn More<\/strong><\/a><\/p><p><\/p><p><em>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.<\/em><\/p>"
+          }
+        },
+        "0a632f77-5408-4f4e-9b9e-9eabb7046152": {
+          "type": "faq",
+          "settings": {
+            "title": "What is Turmeric?",
+            "content": "<p>Curcumin is the main active ingredient in turmeric. It has powerful anti-inflammatory effects and is a very strong antioxidant.*<\/p><p><\/p><p><a href=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3633300\/\" target=\"_blank\" title=\"https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC3633300\/\"><strong>Learn More<\/strong><\/a><\/p><p><\/p><p><em>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.<\/em><\/p>"
+          }
+        },
+        "3fa3096e-8f42-47c8-ac8b-753d95a13011": {
+          "type": "faq",
+          "settings": {
+            "title": "How much of the functional ingredients are in each can of Perfy?",
+            "content": "<p>Each flavor has 50mg of L-theanine in each can. Additionally, Fruit Punch has 30mg of Ashwagandha while Tropical Citrus and Blood Orange Yuzu have 30mg of Turmeric.<\/p>"
+          }
+        },
+        "882d9ea2-da00-42ad-bc08-23152a4289e7": {
+          "type": "faq",
+          "settings": {
+            "title": "Where is Perfy made?",
+            "content": "<p>Perfy is made in the U.S.A. <\/p>"
+          }
+        },
+        "b67d284e-0f05-4440-91a2-4f588051cc72": {
+          "type": "faq",
+          "settings": {
+            "title": "How much sugar is in Perfy?",
+            "content": "<p>Perfy is made with real fruit (not from concentrate) and has 3g-4g sugar per can.<\/p>"
+          }
+        },
+        "bece4ea4-a4c6-41c4-bdb1-cac7aa0afdcf": {
+          "type": "faq",
+          "settings": {
+            "title": "What sweeteners are in Perfy?",
+            "content": "<p>We use a blend of stevia, monk fruit, and allulose. Tropical Citrus and Blood Orange Yuzu have all three. Fruit Punch has Allulose and Stevia.<\/p>"
+          }
+        },
+        "cf8946e0-ea1f-4f95-bbe6-db7fb3c49624": {
+          "type": "faq",
+          "settings": {
+            "title": "Is there a stevia aftertaste in Perfy?",
+            "content": "<p>All of our tastetesters have stated that there isn't an overwhelming stevia \"aftertaste\".<\/p>"
+          }
+        },
+        "914b0cd4-ce75-474d-acaa-543f3b7d3b78": {
+          "type": "faq",
+          "settings": {
+            "title": "When can I drink Perfy?",
+            "content": "<p>We made Perfy to be enjoyed at any time of day. There's no caffeine so you can even enjoy it at night!<\/p>"
+          }
+        },
+        "ca400567-3ebe-43e7-acec-c86d87a1fb7b": {
+          "type": "faq",
+          "settings": {
+            "title": "Can children drink Perfy?",
+            "content": "<p>100% of tastetesters in their teens LOVED Perfy, but it's best to consult with a pediatrician first. <\/p>"
+          }
+        },
+        "bce6caf5-60c0-4e2c-9f88-b09859b0b561": {
+          "type": "faq",
+          "settings": {
+            "title": "Why is Perfy so expensive?",
+            "content": "<p>We are doing our best to provide the best possible soda imaginable while navigating supply chain + inflation issues. We are confident that our prices will be improved as our volumes increase, and the world settles down. And when that happens, we will always pass those savings to our customers.<\/p><p><\/p><p>EDIT: we have already worked on some efficiencies and passed those along to our customers. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0f9da556-51eb-4d10-b35b-8ce838d3d5cc",
+        "4c5fd457-7d2b-410c-90c4-675eb6a52232",
+        "fd13f47c-21b0-4267-a4b0-1fd472d26ed0",
+        "5b50b923-7d1a-40b2-b8da-c849096f7818",
+        "805bfaa7-2ece-4bd8-8633-52d9d906e57a",
+        "b560295a-a1f7-47f8-8083-121ba3445cf2",
+        "0a632f77-5408-4f4e-9b9e-9eabb7046152",
+        "3fa3096e-8f42-47c8-ac8b-753d95a13011",
+        "882d9ea2-da00-42ad-bc08-23152a4289e7",
+        "b67d284e-0f05-4440-91a2-4f588051cc72",
+        "bece4ea4-a4c6-41c4-bdb1-cac7aa0afdcf",
+        "cf8946e0-ea1f-4f95-bbe6-db7fb3c49624",
+        "914b0cd4-ce75-474d-acaa-543f3b7d3b78",
+        "ca400567-3ebe-43e7-acec-c86d87a1fb7b",
+        "bce6caf5-60c0-4e2c-9f88-b09859b0b561"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "page",
+    "faqs"
+  ]
+}

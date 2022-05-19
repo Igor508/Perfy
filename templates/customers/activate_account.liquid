@@ -1,0 +1,42 @@
+<div class="shopify-section">
+<div class="container py-12">
+  <div class="md:w-2/3 xl:w-1/2">
+    <div class="rte">
+      <h1 class="h2 font-bold">{{ 'customer.activate_account.title' | t }}</h1>
+      <p class="text-lg">{{ 'customer.activate_account.subtext' | t }}</p>
+    </div>
+
+    {% form 'activate_customer_password' %}
+      {{ form.errors | default_errors }}
+
+      <div class="mt-4">
+        <label for="CustomerPassword" class="form-label">
+          {{ 'customer.activate_account.password' | t }}
+        </label>
+
+        <input type="password" class="form-control" name="customer[password]" id="CustomerPassword">
+      </div>
+
+      <div class="mt-4">
+        <label for="CustomerPasswordConfirmation" class="form-label">
+          {{ 'customer.activate_account.password_confirm' | t }}
+        </label>
+
+        <input type="password" class="form-control" name="customer[password_confirmation]" id="CustomerPasswordConfirmation">
+      </div>
+
+      <div class="row md:flex-row-reverse md:items-center md:justify-between mt-6">
+        <div class="col">
+          <input type="submit" class="btn btn-secondary cursor-pointer" value="{{ 'customer.activate_account.submit' | t }}">
+        </div>
+
+        <div class="col">
+          <input type="submit" class="btn btn-plain btn-plain--no-arrow bg-transparent appearance-none md:text-base cursor-pointer" name="decline" value="{{ 'customer.activate_account.cancel' | t }}">
+        </div>
+      </div>
+    {% endform %}
+  </div>
+</div>
+
+{% section 'store-locator-cta' %}
+</div>

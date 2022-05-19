@@ -1,0 +1,73 @@
+{%- form 'contact', id: 'TributeForm' -%}
+
+  {%- if form.posted_successfully? -%}
+    
+    <div class="form-status form-status-list form__message relative pl-11 py-4 pr-4 rounded-lg border-2 border-purple-dark bg-orange-light text-purple-dark font-bold" tabindex="-1" autofocus>
+      <div class="svg-wrap absolute left-3 top-4 w-6 h-6">
+        {% render 'icon-success' %}
+      </div>
+
+      {{ 'templates.our-story.form.post_success' | t }}
+    </div>
+
+  {%- elsif form.errors -%}
+
+    <div class="border-2 border-red p-6 rounded-lg mb-4">
+      <div class="form__message">
+        <h2 class="form-status caption-large h4" role="alert" tabindex="-1" autofocus>
+          <div class="inline-block w-6 h-6 svg-wrap svg-wrap--full-size">{% render 'icon-error' %}</div> {{ 'templates.our-story.form.error_heading' | t }}
+        </h2>
+      </div>
+
+      <ul class="form-status-list caption-large list-disc mt-4 ml-7" role="list">
+        <li>
+          <a href="#TributeForm-email" class="link">
+            {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  {%- endif -%}
+
+  <div class="contact__fields space-y-4">
+    <input type="hidden" name="contact[request_type]" value="Memorial section form">
+
+    <div class="field">
+      <label class="form-label" for="TributeForm-message">{{ 'templates.our-story.form.message' | t }}</label>
+      <input class="form-control" type="text" id="TributeForm-message" name="contact[message]" value="{%- if form.message -%}{{- form.message -}}{%- endif -%}"
+        {% if form.errors contains 'message' %}
+          aria-invalid="true"
+          aria-describedby="TributeForm-message-error"
+        {% endif %}
+      >
+    </div>
+
+    <div class="field">
+      <label class="form-label" for="TributeForm-email">{{ 'templates.our-story.form.email' | t }}</label>
+      <input class="form-control" autocomplete="email" type="text" id="TributeForm-email" name="contact[email]" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+        {% if form.errors contains 'name' %}
+          aria-invalid="true"
+          aria-describedby="TributeForm-email-error"
+        {% endif %}
+      >
+    </div>
+
+    <div>
+      <button type="submit" class="btn btn-primary">
+        {{ 'templates.our-story.form.send' | t }}
+      </button>
+    </div>
+
+    {%- capture disclaimer -%}
+      <div class="text-sm leading-tight">
+        {{ 'templates.our-story.form.email_disclaimer' | t }}
+      </div>
+    {%- endcapture -%}
+
+    {%- unless disclaimer contains 'translation missing' -%}
+      {{ disclaimer }}
+    {%- endunless -%}
+  </div>
+
+{%- endform -%}

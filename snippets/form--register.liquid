@@ -1,0 +1,66 @@
+{% form 'create_customer' %}
+    {% comment %} <h3 class="h2">{{ 'customer.register.title' | t }}</h3> {% endcomment %}
+  
+    {{ form.errors | default_errors }}
+  
+    <div class="sm:flex sm:space-x-8">
+      <div class="mt-6 sm:flex-1">
+        <label for="FirstName" class="form-label">
+          {{ 'customer.register.first_name' | t }}
+        </label>
+        <input type="text"
+          name="customer[first_name]"
+          id="FirstName"
+          class="form-control"
+          autofocus
+          {% if form.first_name %}value="{{ form.first_name }}"{% endif %}>
+      </div>
+    
+      <div class="mt-6 sm:flex-1">
+      <label for="LastName" class="form-label">
+        {{ 'customer.register.last_name' | t }}
+      </label>
+      <input type="text"
+        name="customer[last_name]"
+        class="form-control"
+        id="LastName"
+        {% if form.last_name %}value="{{ form.last_name }}"{% endif %}>
+      </div>
+    </div>
+  
+    <div class="mt-6">
+    <label for="Email" class="form-label">
+      {{ 'customer.register.email' | t }}
+    </label>
+    <input type="email"
+      name="customer[email]"
+      id="Email"
+      class="form-control {% if form.errors contains 'email' %}input-error{% endif %}"
+      value="{% if form.email %}{{ form.email }}{% endif %}"
+      spellcheck="false"
+      autocomplete="off"
+      autocapitalize="off">
+    </div>
+  
+    <div class="mt-6">
+    <label for="CreatePassword" class="form-label">
+      {{ 'customer.register.password' | t }}
+    </label>
+    <input type="password"
+      name="customer[password]"
+      id="CreatePassword"
+      class="form-control {% if form.errors contains 'password' %}input-error{% endif %}"
+    >
+    </div>
+  
+    <div class="mt-8">
+      <button type="submit" class="btn btn-primary-dark block w-full max-w-sm mx-auto font-semibold hover:btn-with-inset-border">
+        {{ 'customer.register.submit' | t }}
+      </button>
+    </div>
+  
+    <div class="mt-6 text-center">
+      <a class="btn-text-sm" href="{{ shop.url }}">{{ 'customer.register.cancel' | t }}</a>
+    </div>
+{% endform %}
+  

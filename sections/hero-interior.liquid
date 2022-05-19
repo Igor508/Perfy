@@ -1,0 +1,90 @@
+<div class="hero-splash-wrapper relative text-purple-dark bg-yellow py-8">
+  <div class="container flex xl:max-w-screen-2xl">
+    <div class="w-full lg:w-7/12 text-left xl:w-1/2 md:text-center">
+    {% if section.settings.title != blank %}
+      <div class="w-full relative mb-6 lg:mb-12 max-w-[calc(100vw - 313px)]">
+    {% endif %}
+    {% if section.settings.title != blank %}
+      <h1 class="font-heading font-bold display-1 text-left w-full" style="line-height: .85;">
+        <div> {{ section.settings.title }} </div>
+        {% if section.settings.title_line_2 != blank %}<div>{{ section.settings.title_line_2 }}</div>{% endif %}
+        {% if section.settings.title_line_3 != blank %}<div>{{ section.settings.title_line_3 }}</div>{% endif %}
+      </h1>
+      
+    {% endif %}
+    {% if section.settings.content != blank %}
+      <h3 class="hero__subtitle p-lg text-left font-normal font-sans lg:w-full">{{ section.settings.content }}</h3>
+    {% endif %}
+    {% if section.settings.title != blank %}
+      </div>
+    {% endif %}
+    {% if section.settings.cta_url != blank %}
+      <a class="btn btn-primary" href="{{ section.settings.cta_url }}">{{ section.settings.cta_label }}</a>
+    {% endif %}
+    </div>
+    {% if section.settings.image != blank %}
+      <img
+        src="{{ section.settings.image | image_url: height: 800 }}"
+        height="{{ section.settings.image.height }}"
+        width="{{ section.settings.image.width }}"
+        alt="Cans of Perfy"
+        class="absolute hero-image z-20"
+        loading="lazy"
+      />
+    {% endif %}
+  </div>
+  {% comment %} // .container {% endcomment %}
+</div>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "we make",
+      "label": "Hero Text"
+    },
+    {
+      "type": "text",
+      "id": "title_line_2",
+      "default": "healthy",
+      "label": "Hero Text Line 2"
+    },
+    {
+      "type": "text",
+      "id": "title_line_3",
+      "default": "soda",
+      "label": "Hero Text Line 3"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Hero Content"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "Join Us",
+      "label": "CTA Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero"
+    }
+  ]
+}
+{% endschema %}

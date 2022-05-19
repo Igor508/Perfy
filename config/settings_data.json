@@ -1,0 +1,73 @@
+{
+  "current": {
+    "related_primary": "blood-orange-yuzu",
+    "related_secondary": "fruit-punch",
+    "related_tertiary": "tropical-citrus",
+    "social_twitter_link": "https:\/\/twitter.com\/drinkperfy",
+    "social_facebook_link": "https:\/\/www.facebook.com\/drinkperfy",
+    "social_instagram_link": "https:\/\/www.instagram.com\/drinkperfy",
+    "social_tiktok_link": "https:\/\/vm.tiktok.com\/TTPdkGw8MY\/",
+    "favicon": "shopify:\/\/shop_images\/Perfy_Favicon_FP.png",
+    "newsletter_headline": "Join the Crew & Save 10%",
+    "newsletter_content": "Sign up for access to our product drops, dad jokes, bad puns, and 10% off your next order.",
+    "newsletter_form_snippet": "<div class=\"klaviyo-form-S9m9dp\"><\/div>",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo_-_Dark_Purple_256x256_crop_center_cb0cf6cb-20fe-44d7-8f98-846c59d4d66d.png",
+    "checkout_body_background_color": "#fff4f1",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_color": "#ffffff",
+    "checkout_accent_color": "#2a0f3f",
+    "checkout_button_color": "#2a0f3f",
+    "checkout_error_color": "#f42814",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Buy 2 Cases and Unlock Free Shipping",
+              "link": "shopify:\/\/products\/fruit-punch",
+              "text_color": "text-white",
+              "background_color": "bg-purple-dark"
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "mobile_menu": "mobile-menu",
+          "desktop_menu_left": "primary-navigation-left",
+          "desktop_menu_right": "primary-navigation-right",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_stamp": "shopify:\/\/shop_images\/Drink_Perfy_Sticker.png",
+          "menu_1": "shop",
+          "menu_2": "adventure",
+          "menu_3": "support",
+          "footer_utility": "footer-utility",
+          "copyright_name": "Forzo, Inc."
+        }
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "733389323033596483": {
+        "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/theme-settings\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+        "disabled": false,
+        "settings": {
+          "show_preview_data": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "sections": {
+    "164253820485a047a1": {
+      "type": "page-hero",
+      "settings": {
+        "bg_gradient": "yellow_to_orange",
+        "extra_bottom_padding": true,
+        "hide_image_mobile": false,
+        "title": "The Soda You Can Still Drink...Even After You Stop Drinking Soda.",
+        "display_size": true,
+        "content": "Let's be honest. Soda has become a four-letter word. And we're here to fix that. Not because we don't like soda. Because we LOVE it.",
+        "cta_label": "Shop Now",
+        "cta_url": "shopify:\/\/products\/fruit-punch"
+      }
+    },
+    "1642538212961460a2": {
+      "type": "page-content",
+      "settings": {
+        "extra_padding": false
+      }
+    },
+    "16425382162ca83fd6": {
+      "type": "comparison",
+      "blocks": {
+        "16425382166228874d-0": {
+          "type": "brand",
+          "settings": {
+            "is_primary": true,
+            "image": "shopify:\/\/shop_images\/Logo_-_Dark_Purple_256x256_crop_center_cb0cf6cb-20fe-44d7-8f98-846c59d4d66d.png",
+            "title": "Perfy",
+            "calories": "20",
+            "sugar": "3g-4g",
+            "net_carbs": "5g",
+            "functional": true,
+            "all_natural": true
+          }
+        },
+        "16425382166228874d-1": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Hawaiian_Punch.png",
+            "title": "Hawaiian Punch",
+            "calories": "80",
+            "sugar": "21g",
+            "net_carbs": "22g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "16425382166228874d-2": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Squirt.png",
+            "title": "Squirt",
+            "calories": "150",
+            "sugar": "39g",
+            "net_carbs": "40g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "6b7ffec6-b4fd-4f9d-af32-9d0f18bdb05b": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Cactus_Cooler.png",
+            "title": "Cactus Cooler",
+            "calories": "170",
+            "sugar": "44g",
+            "net_carbs": "45g",
+            "functional": false,
+            "all_natural": false
+          }
+        }
+      },
+      "block_order": [
+        "16425382166228874d-0",
+        "16425382166228874d-1",
+        "16425382166228874d-2",
+        "6b7ffec6-b4fd-4f9d-af32-9d0f18bdb05b"
+      ],
+      "settings": {
+        "title": "Perfy vs. Big Soda",
+        "subtext": "The soda you can still drink...even after you stop drinking soda.",
+        "cta_label": "TRY NOW",
+        "cta_url": "shopify:\/\/products\/fruity-variety-pack"
+      }
+    }
+  },
+  "order": [
+    "164253820485a047a1",
+    "1642538212961460a2",
+    "16425382162ca83fd6"
+  ]
+}

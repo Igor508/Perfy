@@ -1,0 +1,18 @@
+{%- assign keys = 'primary|secondary|tertiary' | split: '|' -%}
+
+<script type="application/json" data-cart-drawer-related-products>
+  {
+    {%- capture p -%}
+      {%- for id in keys -%}
+        {%- assign key = id | prepend: 'related_' -%}
+        {%- assign _product = settings[key] -%}
+
+        {%- if _product -%}
+          ,{{ id | json }}: {{ all_products[_product] | json }}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endcapture -%}
+
+    {{ p | remove_first: ',' }}
+  }
+</script>

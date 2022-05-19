@@ -1,0 +1,27 @@
+{%- assign _accordion_content = _accordion_content | strip -%}
+
+{%- if _accordion_content == blank -%}
+	{% break %}
+{%- endif -%}
+	
+<details class="c-accordion__item"
+	{%- if _open -%} open {%- endif -%}
+>
+	<summary
+		type="button"
+		class="c-accordion__title h4 uppercase border-b-2 border-purple-dark block w-full text-left relative py-2 leading-loose"
+		role="button"
+		aria-controls="accordion-row-{{ _id }}"
+        aria-expanded="{% if _open %}true{% else %}false{% endif %}"
+	>
+		{{ _accordion_title }}
+
+		<div class="c-accordion__toggle-icon block absolute right-2 top-1/2 -mt-3 w-6 h-6"></div>
+	</summary>
+
+	<div id="accordion-row-{{ _id }}" class="c-accordion__content py-3">
+		<div class="max-w-3xl text-lg">
+			<div class="rte"> {{ _accordion_content }} </div>
+		</div>
+	</div>
+</details>

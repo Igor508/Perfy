@@ -1,0 +1,164 @@
+
+<footer class="footer bg-purple-dark relative text-white font-sans">
+  <div class="absolute footer-top text-purple-dark w-full z-10 svg-wrap">{% render 'footer-curve.svg' %}</div>
+
+  {%- unless template contains 'customers' or template contains 'our-story' -%}
+    <div class="footer__mailing-wrap container relative md:justify-between py-6 md:py-20 md:flex md:flex-wrap">
+      {% if template contains 'index' %}
+        {% if section.settings.footer_stamp != blank %}
+          <div class="absolute footer-stamp hidden md:block z-20">
+            <img src="{{ section.settings.footer_stamp | image_url: width: 192, height: 192 }}" class="stamp-image w-36 h-36 lg:w-48 lg:h-48 mb-6 -translate-y-1/2" alt="Drink Perfy Can Image" loading="lazy"/>
+          </div>
+        {% endif %}
+      {% endif %}
+
+      <div class="w-full md:w-1/2 my-8 md:my-0 md:pr-4">
+
+        {%- if settings.newsletter_headline != blank -%}
+          <h3 class="font-bold mb-2">
+            {{ settings.newsletter_headline }}
+          </h3>
+        {%- endif -%}
+
+        {%- if settings.newsletter_content -%}
+          <p class="p-lg">
+            {{ settings.newsletter_content }}
+          </p>
+        {%- endif -%}
+
+      </div>
+
+      <div class="w-full md:w-1/2 my-8 md:my-0 md:pl-4 overflow-hidden">
+        {%- if settings.newsletter_form_snippet -%}
+          <div>{{ settings.newsletter_form_snippet }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  {% endunless %}
+
+  <div class="container footer-nav justify-center py-6 md:py-20">
+    <div class="footer-social md:hidden pb-6">
+      {% render 'footer-social' %}
+    </div>
+    <div class="footer-nav_wrapper w-full lg:flex lg:justify-between">
+      <div class="hidden md:block w-full lg:w-1/4 svg-wrap max-w-[260px]">
+        {% render 'logo.svg' %}
+      </div>
+    <div class="w-full lg:w-1/4 flex flex-col justify-start lg:items-center">
+
+      {%- if section.settings.menu_1 != blank -%}
+
+      {%
+        render 'footer-menu',
+        menu_slug: section.settings.menu_1,
+        linklist: linklists[section.settings.menu_1],
+      %}
+
+    {%- endif -%}
+
+    </div>
+
+    <div class="w-full lg:w-1/4 flex flex-col justify-start lg:items-center">
+      {%- if section.settings.menu_2 != blank -%}
+
+        {%
+          render 'footer-menu',
+          menu_slug: section.settings.menu_2,
+          linklist: linklists[section.settings.menu_2],
+        %}
+
+      {%- endif -%}
+      
+    </div>
+    <div class="w-full lg:w-1/4 flex flex-col justify-start lg:items-center">
+
+      {%- if section.settings.menu_3 != blank -%}
+
+        {%
+          render 'footer-menu',
+          menu_slug: section.settings.menu_3,
+          linklist: linklists[section.settings.menu_3],
+        %}
+
+      {%- endif -%}
+      
+    </div>
+
+    <div class="md:hidden w-full svg-wrap max-w-[260px] my-6">
+      {% render 'logo.svg' %}
+    </div>
+    
+  </div>
+  <div class="footer-policy w-full flex justify-between">
+    <div class="flex flex-col md:flex-row w-full md:w-auto">
+      <div class="policy-nav border-b md:border-b-0 text-footer-policy py-4 md:py-8">
+        {% render 'link-list-basic', linklist: linklists[section.settings.footer_utility] %}
+      </div>
+      <div class="copyright text-footer-policy py-4 md:py-8 md:ml-12">
+        &copy;{{ 'now' | date: "%Y" }}
+
+        {% if section.settings.copyright_name != blank %}
+          {{ section.settings.copyright_name }}
+        {% else %}
+          {{ shop.name }}
+        {% endif %}
+
+      </div>
+    </div>
+    <div class="footer-social hidden md:block py-4 md:py-8">
+      {% render 'footer-social' %}
+    </div>
+  </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Footer Settings"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_stamp",
+      "label": "Footer Stamp Image"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_1",
+      "label": "Footer Menu One"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_2",
+      "label": "Footer Menu Two"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_3",
+      "label": "Footer Menu Three"
+    },
+    {
+      "type": "link_list",
+      "id": "footer_utility",
+      "label": "Footer Utility Menu",
+      "info": "For links to policy pages and such."
+    },
+    {
+      "type": "paragraph",
+      "content": "Newsletter area defined in Theme Settings"
+    },
+    {
+      "type": "header",
+      "content": "Copyright"
+    },
+    {
+      "type": "text",
+      "id": "copyright_name",
+      "label": "Copyright"
+    }
+  ]
+}
+{% endschema %}

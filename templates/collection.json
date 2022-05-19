@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "show_description": true,
+        "show_rating": false,
+        "enable_filtering": false,
+        "enable_sorting": false,
+        "collapse_on_larger_devices": false
+      }
+    },
+    "16445238311340e07a": {
+      "type": "guarantee",
+      "settings": {
+        "title": "Try risk free with our 100% satisfaction guarantee.",
+        "subtitle": "The Perfy Promise",
+        "button_url": "shopify:\/\/products\/fruity-trial-pack",
+        "button_text": "TRY NOW",
+        "show_stars_graphic": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "16445238311340e07a"
+  ]
+}

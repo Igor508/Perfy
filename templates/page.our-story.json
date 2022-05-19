@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "1642538067ac9c8358": {
+      "type": "page-hero",
+      "settings": {
+        "bg_gradient": "orange_to_yellow",
+        "extra_bottom_padding": true,
+        "image": "shopify:\/\/shop_images\/Blood_Orange.png",
+        "hide_image_mobile": false,
+        "mobile_image": "shopify:\/\/shop_images\/can-our-story_1.png",
+        "title": "Our Story",
+        "display_size": false,
+        "content": "",
+        "cta_label": "",
+        "cta_url": "",
+        "mobile_image_max_width": 448,
+        "mobile_text_alignment": "text-center",
+        "desktop_text_alignment": "md:text-left"
+      }
+    },
+    "1642538123458451ba": {
+      "type": "page-content",
+      "settings": {
+        "extra_padding": false,
+        "hide_upper_curve": false,
+        "hide_lower_curve": false,
+        "background_color": "bg-coral-100",
+        "alignment": "left"
+      }
+    },
+    "164262349272a8ea67": {
+      "type": "page-about--tribute",
+      "blocks": {
+        "21e554bf-5a31-4fca-a273-7df022a52746": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Mike \"Mitch\" Jurich III"
+          }
+        },
+        "d2ac82e7-a155-4936-a6da-7f5eec22437d": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Raymond Jurich"
+          }
+        },
+        "0a86e549-5ae3-47b2-bb1c-4374ddc823f6": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Scott Molinari"
+          }
+        },
+        "a0620593-ab62-4536-a45f-783016ff490f": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Chris Stretch"
+          }
+        },
+        "f9d47a5c-73ff-4097-ac25-61e5bc1e8078": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Jordan Simpson"
+          }
+        },
+        "8301defd-d486-405a-ad77-66a113e4f2c7": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Brian Ricker"
+          }
+        },
+        "a6a19e17-9b91-46b0-a70b-5814dac138d7": {
+          "type": "name",
+          "disabled": true,
+          "settings": {
+            "title": "Johnny Barry"
+          }
+        }
+      },
+      "block_order": [
+        "21e554bf-5a31-4fca-a273-7df022a52746",
+        "d2ac82e7-a155-4936-a6da-7f5eec22437d",
+        "0a86e549-5ae3-47b2-bb1c-4374ddc823f6",
+        "a0620593-ab62-4536-a45f-783016ff490f",
+        "f9d47a5c-73ff-4097-ac25-61e5bc1e8078",
+        "8301defd-d486-405a-ad77-66a113e4f2c7",
+        "a6a19e17-9b91-46b0-a70b-5814dac138d7"
+      ],
+      "settings": {
+        "extra_top_padding": false,
+        "image": "shopify:\/\/shop_images\/Perfy_mothersday.jpg",
+        "caption": "Me and Mom",
+        "title": "",
+        "form_snippet": "<div class=\"klaviyo-form-ULY8zi\"><\/div>"
+      }
+    }
+  },
+  "order": [
+    "1642538067ac9c8358",
+    "1642538123458451ba",
+    "164262349272a8ea67"
+  ]
+}

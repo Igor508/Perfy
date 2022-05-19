@@ -1,0 +1,64 @@
+<div class="container py-12 text-center">
+    <div class="relative space-y-7 inline-block px-16 lg:px-0">
+        {%- if section.settings.show_stars_graphic -%}
+            <div class="absolute -left-6 lg:left-auto lg:right-full top-1/2 transform -translate-y-1/2 w-24">
+                {% render 'icon-stars.svg' %}
+            </div>
+        {%- endif -%}
+            
+        {%- if section.settings.subtitle -%}
+            <div class="text-xl uppercase font-bold"> {{ section.settings.subtitle }} </div>
+        {%- endif -%}
+
+        {%- if section.settings.title -%}
+            <div class="h3 font-bold"> {{ section.settings.title }} </div>
+        {%- endif -%}
+
+        {%- if section.settings.button_url -%}
+            <a href="{{ section.settings.button_url }}"  class="btn btn-primary btn-border border-2 border-r-purple-dark">
+                {{ section.settings.button_text | default: 'Learn more' }}
+            </a>
+        {%- endif -%}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Guarantee CTA",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Try risk free with our 100% satisfaction guarantee."
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "The Perfy Promise"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+        "type": "checkbox",
+        "id": "show_stars_graphic",
+        "label": "Show stars graphic",
+        "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guarantee CTA"
+    }
+  ] 
+}
+{% endschema %}

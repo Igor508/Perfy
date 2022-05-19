@@ -1,0 +1,34 @@
+{%- assign social_links = 'TikTok|Instagram|Facebook|Twitter|YouTube' | split: '|' -%}
+
+{%- for network in social_links -%}
+
+  {%- assign network_link = network | handleize | prepend: 'social_' | append: '_link' -%}
+  {%- assign network_slug = network | handleize -%}
+
+  {%- if settings[network_link] != blank -%}
+
+    <a href="{{ settings[network_link] }}" target="_blank" title="{{ network }}" class="icon-{{ network }} inline-block mr-1">
+
+      <div class="w-12 h-12 p-1 svg-wrap text-white">
+        {% case network_slug %}
+          {% when 'tiktok' %}
+            {% render 'icon-tiktok' %}
+          {% when 'instagram' %}
+            {% render 'icon-instagram' %}
+          {% when 'facebook' %}
+            {% render 'icon-facebook' %}
+          {% when 'twitter' %}
+            {% render 'icon-twitter' %}
+          {% when 'youtube' %}
+            {% render 'icon-youtube' %}
+        {% endcase %}
+      </div>
+
+      <div class="sr-only">
+        {{ network }}
+      </div>
+    </a>
+
+  {%- endif -%}
+
+{%- endfor -%}

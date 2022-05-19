@@ -1,0 +1,98 @@
+{%- capture container_classes -%}
+  container|my-12
+
+  {%- if section.settings.vertical_padding == 'small' -%}
+    |py-12
+  {%- endif -%}
+
+  {%- if section.settings.vertical_padding == 'large' -%}
+    |py-24
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if section.settings.button_link != blank -%}
+
+  <div class="{{ container_classes | strip_newlines | split: '|' | join: ' ' }}">
+
+    <div class="flex justify-center">
+
+      <a
+        href="{{ section.settings.button_link }}"
+        title="{{ section.settings.button_text }}"
+        class="btn {{ section.settings.button_style }} {% if section.settings.button_use_border %} btn-border {% endif %}"
+      >
+
+        {{ section.settings.button_text }}
+
+      </a>
+      
+    </div>
+    
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "CTA Content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "options": [
+          {
+            "value": "btn-primary",
+            "label": "Primary"
+          },
+          {
+            "value": "btn-secondary",
+            "label": "Secondary"
+          }
+        ],
+        "default": "btn-primary"
+      },
+      {
+        "type": "checkbox",
+        "id": "button_use_border",
+        "label": "Add button border",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Spacing"
+      },
+      {
+        "type": "radio",
+        "id": "vertical_padding",
+        "label": "Vertical padding",
+        "options": [
+          { "value": "none", "label": "None" },
+          { "value": "small", "label": "Small" },
+          { "value": "large", "label": "Large" }
+        ],
+        "default": "none",
+        "info": "If this is the first or last section on the page, this setting may be overridden by the theme's styling."
+      }
+    ],
+    "presets": [
+      {
+        "name": "CTA Content"
+      }
+    ]
+  }
+{% endschema %}

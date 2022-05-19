@@ -1,0 +1,493 @@
+{
+  "sections": {
+    "164130753535877b36": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cans_with_Shadow.png",
+        "title": "bubbles",
+        "title_line_2": "for your",
+        "title_line_3": "brain.",
+        "content": "superfood soda enhanced with nootropics + adaptogens & only 3g-4g sugar per can.",
+        "cta_label": "Shop Soda",
+        "cta_url": "shopify:\/\/products\/fruit-punch"
+      }
+    },
+    "16445152637aba1f17": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "below-hero",
+        "curve_color": "text-purple-dark"
+      }
+    },
+    "1644515290ffac068c": {
+      "type": "featured-products",
+      "blocks": {
+        "16445152902ec0974b-0": {
+          "type": "product",
+          "settings": {
+            "product": "fruit-punch"
+          }
+        },
+        "16445152902ec0974b-1": {
+          "type": "product",
+          "settings": {
+            "product": "blood-orange-yuzu"
+          }
+        },
+        "16445152902ec0974b-2": {
+          "type": "product",
+          "settings": {
+            "product": "tropical-citrus"
+          }
+        },
+        "76f90f57-8163-46b0-b915-b26f99671d8b": {
+          "type": "product",
+          "settings": {
+            "product": "fruity-variety-pack"
+          }
+        },
+        "7b3b96d9-f9f2-4738-80de-f2316ecaf3b6": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": "fruity-trial-pack"
+          }
+        }
+      },
+      "block_order": [
+        "16445152902ec0974b-0",
+        "16445152902ec0974b-1",
+        "16445152902ec0974b-2",
+        "76f90f57-8163-46b0-b915-b26f99671d8b",
+        "7b3b96d9-f9f2-4738-80de-f2316ecaf3b6"
+      ],
+      "settings": {
+        "title": "Choose Your Flavor"
+      }
+    },
+    "16445153516e11e853": {
+      "type": "full-width-decoration",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/decoration-desktop_d26e76c9-f4c3-4f96-9e27-ae303bb2e03a.png",
+        "image_mobile": "shopify:\/\/shop_images\/decoration-mobile_671b5b23-0f2d-4e57-bbfd-ad1c6e05de0c.png",
+        "use_animations": true,
+        "title": "Perfy's Features"
+      }
+    },
+    "16463602529364c9f6": {
+      "type": "icons",
+      "blocks": {
+        "1646360252fe768563-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bevnet.png",
+            "title": ""
+          }
+        },
+        "1646360252fe768563-3": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/foodbeast.png",
+            "title": ""
+          }
+        },
+        "1646360252fe768563-1": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/thingtesting.png",
+            "title": ""
+          }
+        },
+        "1646360252fe768563-4": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/trendhunter.png",
+            "title": ""
+          }
+        },
+        "1646360252fe768563-2": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dieline.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "1646360252fe768563-0",
+        "1646360252fe768563-3",
+        "1646360252fe768563-1",
+        "1646360252fe768563-4",
+        "1646360252fe768563-2"
+      ],
+      "settings": {
+        "title": "As Seen In:",
+        "extra_top_padding": false,
+        "extra_bottom_padding": false
+      }
+    },
+    "164451539695793240": {
+      "type": "features",
+      "blocks": {
+        "16445153964a666a3b-2": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Perfectly_Delicious_09e05503-6561-4453-acb0-9294f34e53dd.png",
+            "title": "Keto-Friendly",
+            "content": "We use real fruit juice and a blend of stevia, monk fruit, and allulose to deliver great taste without spiking your blood sugar.†"
+          }
+        },
+        "16445153964a666a3b-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Perfectly_Functional.png",
+            "title": "All-Natural",
+            "content": "We took everything bad about traditional soda and replaced it with the best ingredients possible. You'll never find cane sugar, high fructose corn syrup, artificial ingredients or preservatives in Perfy."
+          }
+        },
+        "16445153964a666a3b-0": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Perfectly_Sweetened.png",
+            "title": "Adaptotropic™",
+            "content": "We packed Perfy with brain-boosting nootropics and adaptogens to combat stress and anxiety while enhancing calm and focus.†"
+          }
+        }
+      },
+      "block_order": [
+        "16445153964a666a3b-2",
+        "16445153964a666a3b-1",
+        "16445153964a666a3b-0"
+      ],
+      "settings": {
+        "title": "The Perfect Soda™",
+        "extra_top_padding": false,
+        "extra_bottom_padding": false,
+        "badge": "shopify:\/\/shop_images\/Packed_With_Benefit_Sticker.png"
+      }
+    },
+    "1641271169ed7054b0": {
+      "type": "icons",
+      "blocks": {
+        "16412711690d5d29c4-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Low_Sugar.png",
+            "title": "keto-friendly"
+          }
+        },
+        "16412711690d5d29c4-4": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nootropics.png",
+            "title": "nootropics"
+          }
+        },
+        "16412711690d5d29c4-3": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Adaptogens..png",
+            "title": "adaptogens"
+          }
+        },
+        "16412711690d5d29c4-2": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/No_Concentrate.png",
+            "title": "no added sugar"
+          }
+        },
+        "16412711690d5d29c4-1": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/No_Artificial.png",
+            "title": "nothing artificial"
+          }
+        },
+        "16412711690d5d29c4-5": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Caffeine_Free.png",
+            "title": "caffeine-free"
+          }
+        }
+      },
+      "block_order": [
+        "16412711690d5d29c4-0",
+        "16412711690d5d29c4-4",
+        "16412711690d5d29c4-3",
+        "16412711690d5d29c4-2",
+        "16412711690d5d29c4-1",
+        "16412711690d5d29c4-5"
+      ],
+      "settings": {
+        "title": "What Makes Us Perfy?",
+        "extra_top_padding": true,
+        "extra_bottom_padding": true
+      }
+    },
+    "16445152175c91a043": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "above-testimonials",
+        "curve_color": "text-purple-dark"
+      }
+    },
+    "164126692108131cb7": {
+      "type": "testimonials",
+      "blocks": {
+        "8c942d1b-74f4-4141-b85a-0966011fee8d": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6460.jpg",
+            "name": "Meg Cremins",
+            "handle": "@beetsandbetes",
+            "titles": "Type 1 Diabetic",
+            "content": "I was so surprised when I saw how little of an impact Perfy made on my blood sugars. Even without dosing any insulin, it was as if I was just drinking water!"
+          }
+        },
+        "12364df8-a046-4e31-8bb9-664e218a6b45": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image001_47bbff77-d3f2-43b5-a276-bfaca20ccae4.jpg",
+            "name": "Tara Garrison",
+            "handle": "@coachtaragarrison",
+            "titles": "Health Coach",
+            "content": "Real fruit, low sugar, nootropics and adaptogens all in one delicious drink?! I'm obsessed. These guys get it. As a health coach and performance junky, all I can say is: THANK YOU! My mind feels so clear after drinking Perfy."
+          }
+        },
+        "74e4a2db-9bfd-4a4d-99fb-e5f211690004": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6736.jpg",
+            "name": "Raquel Baron",
+            "handle": "@typeoneday",
+            "titles": "Type 1 Diabetic",
+            "content": "It’s so hard to find fun drinks that don’t spike my blood sugar. Perfy eliminates that issue and I’m amazed at how delicious it is!"
+          }
+        },
+        "de6b12e4-dd0b-4c78-9ca3-05d2ede0d5dc": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
+            "name": "Logan D.",
+            "handle": "@loganberrygrace",
+            "titles": "Mom",
+            "content": "Really good stuff - I literally never drink soda ever bc there’s always an ingredient that I’m leary of. Even in 'healthy' sodas. But these are 🙌  you should be super proud!"
+          }
+        },
+        "f7aae443-d2cf-4a3d-8c29-c16c081428f9": {
+          "type": "testimonial",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6660.jpg",
+            "name": "Michael H.",
+            "handle": "@fat_dad_keto",
+            "titles": "Keto Dieter",
+            "content": "This Blood Orange Yuzu is seriously one of the most interesting and delicious drinks I've ever had."
+          }
+        },
+        "16412669218b0016f2-0": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "name": "Bobby P.",
+            "handle": "@flavcity",
+            "titles": "Health Influencer",
+            "content": "“Standing ovation...you nailed it! Both my wife and I LOVE IT. The balance of fruit flavor with sweetness is spot on with no funky aftertaste.”"
+          }
+        },
+        "16412669218b0016f2-1": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "name": "Ignacio L.",
+            "handle": "",
+            "titles": "EMT",
+            "content": "“The soda is unbelievable. It has a great taste, none of that nasty after taste like others. The flavors are dope!”"
+          }
+        },
+        "f84f8380-281e-4ad6-9e86-9fb118ccb73b": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "name": "",
+            "handle": "",
+            "titles": "",
+            "content": "\"These are seriously so good. Like not good for 'diet' but GOOD. Full stop.\""
+          }
+        }
+      },
+      "block_order": [
+        "8c942d1b-74f4-4141-b85a-0966011fee8d",
+        "12364df8-a046-4e31-8bb9-664e218a6b45",
+        "74e4a2db-9bfd-4a4d-99fb-e5f211690004",
+        "de6b12e4-dd0b-4c78-9ca3-05d2ede0d5dc",
+        "f7aae443-d2cf-4a3d-8c29-c16c081428f9",
+        "16412669218b0016f2-0",
+        "16412669218b0016f2-1",
+        "f84f8380-281e-4ad6-9e86-9fb118ccb73b"
+      ],
+      "settings": {
+        "title": "<span style=\"color:rgb(255 216 79);display:block;font-size:2.2rem;margin-bottom:15px;\">★★★★★<\/span> Nothing But Love",
+        "cta_label": "SHOP SUPERFOOD SODA",
+        "cta_url": "shopify:\/\/products\/fruity-variety-pack",
+        "cta_subtext": "100% SATISFACTION GUARANTEE"
+      }
+    },
+    "16445152367b9b63d2": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "below-testimonials",
+        "curve_color": "text-purple-dark"
+      }
+    },
+    "164126670760bf3f5d": {
+      "type": "comparison",
+      "blocks": {
+        "16412667078c21fb71-0": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Logo_-_Dark_Purple_256x256_crop_center_cb0cf6cb-20fe-44d7-8f98-846c59d4d66d.png",
+            "title": "Perfy",
+            "calories": "20",
+            "sugar": "3g-4g",
+            "net_carbs": "5g",
+            "functional": true,
+            "all_natural": true
+          }
+        },
+        "16412667078c21fb71-1": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Hawaiian_Punch.png",
+            "title": "Hawaiian Punch",
+            "calories": "80",
+            "sugar": "21g",
+            "net_carbs": "22g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "c3d81507-1201-4027-9359-6433c437d199": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Cactus_Cooler.png",
+            "title": "Cactus Cooler",
+            "calories": "150",
+            "sugar": "39g",
+            "net_carbs": "40g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "16412667078c21fb71-2": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Squirt.png",
+            "title": "Squirt",
+            "calories": "170",
+            "sugar": "44g",
+            "net_carbs": "45g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "fb7262ed-898f-4bf7-8074-b65c258e7d9f": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "is_primary": false,
+            "title": "Other Brand",
+            "calories": "",
+            "sugar": "",
+            "net_carbs": "",
+            "functional": false,
+            "all_natural": false
+          }
+        }
+      },
+      "block_order": [
+        "16412667078c21fb71-0",
+        "16412667078c21fb71-1",
+        "c3d81507-1201-4027-9359-6433c437d199",
+        "16412667078c21fb71-2",
+        "fb7262ed-898f-4bf7-8074-b65c258e7d9f"
+      ],
+      "settings": {
+        "title": "Perfy vs. Big Soda",
+        "subtext": "We took everything bad out of traditional soda and replaced it with the best possible ingredients.",
+        "cta_label": "TRY NOW",
+        "cta_url": "shopify:\/\/products\/fruit-punch"
+      }
+    },
+    "1644515566c88b5e84": {
+      "type": "gallery",
+      "blocks": {
+        "1644515566231ee2a9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Perfy_Jan22_0079.jpg"
+          }
+        },
+        "1644515566231ee2a9-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Perfy_March221115_1.jpg"
+          }
+        },
+        "1644515566231ee2a9-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/perfy-tower.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1644515566231ee2a9-0",
+        "1644515566231ee2a9-1",
+        "1644515566231ee2a9-2"
+      ],
+      "settings": {
+        "title": "Join The Anti-Soda Soda Club",
+        "cta_label": "FOLLOW US ON INSTAGRAM",
+        "cta_url": "https:\/\/www.instagram.com\/drinkperfy",
+        "extra_top_padding": false,
+        "extra_bottom_padding": false
+      }
+    },
+    "1644516027f6f2623f": {
+      "type": "fizz-animation",
+      "settings": {}
+    },
+    "1646275296f97dba9d": {
+      "type": "guarantee",
+      "settings": {
+        "title": "Love it, or your money back.",
+        "subtitle": "The Perfy Promise",
+        "button_url": "shopify:\/\/products\/fruit-punch",
+        "button_text": "Try Perfy Now",
+        "show_stars_graphic": true
+      }
+    }
+  },
+  "order": [
+    "164130753535877b36",
+    "16445152637aba1f17",
+    "1644515290ffac068c",
+    "16445153516e11e853",
+    "16463602529364c9f6",
+    "164451539695793240",
+    "1641271169ed7054b0",
+    "16445152175c91a043",
+    "164126692108131cb7",
+    "16445152367b9b63d2",
+    "164126670760bf3f5d",
+    "1644515566c88b5e84",
+    "1644516027f6f2623f",
+    "1646275296f97dba9d"
+  ]
+}

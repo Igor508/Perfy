@@ -1,0 +1,46 @@
+{%- if cart.item_count > 0 -%}
+
+<div class="bg-yellow py-12">
+    <div class="container">
+
+        {%- if section.settings.shipping_message != nil -%}
+            <div class="text-xl font-bold">
+                {{ 'sections.cart.headings.shipping' | t }}
+            </div>
+            
+            {{ section.settings.shipping_message }}
+        {%- endif -%}
+
+        {%- if section.settings.guarantee_message != nil -%}
+            <div class="text-xl font-bold">
+                {{ 'sections.cart.headings.guarantee' | t }}
+            </div>
+
+            <div class="rte">
+                {{ section.settings.guarantee_message }}
+            </div>
+        {%- endif -%}
+
+    </div>
+</div>
+
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-details.name",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "guarantee_message",
+      "label": "t:sections.main-cart-details.settings.guarantee_message.label"
+    },
+    {
+      "type": "richtext",
+      "id": "shipping_message",
+      "label": "t:sections.main-cart-details.settings.shipping_message.label"
+    }
+  ]
+}
+{% endschema %}
+

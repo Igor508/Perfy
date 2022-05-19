@@ -1,0 +1,35 @@
+{% unless template contains 'trial' %}
+{%- assign products = product.metafields.perfy.linked_products | split: '|' -%}
+
+{%- if products.size == 0 -%}
+    {% break %}
+{%- endif -%}
+
+<div class="bg-white rounded-lg border-2 border-purple-dark px-3 py-2">
+
+    <label for="flavor-select" class="inline-block text-base text-purple-dark"> 
+        {%- if _settings.related_products_label != blank -%}
+            {{ _settings.related_products_label }}
+        {%- else -%}
+            Flavor
+        {%- endif -%}
+    </label>
+
+    <select data-linked-products id="flavor-select" name="flavor-select" class="block w-full h-10 appearance-none text-[26px] pr-12 has-cheveron-down-purple bg-white">
+
+        {%- for p in products -%}
+            {%- assign _product = all_products[p] -%}
+
+            <option
+                {% if p == product.handle %} selected {% endif %}
+                value="" data-related-product-url="{{ _product.selected_or_first_available_variant.url }}"
+            >
+                {{ _product.title }}
+            </option>
+        {%- endfor -%}
+
+    </select>
+
+</div>
+
+{%endunless%}

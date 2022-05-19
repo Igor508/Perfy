@@ -1,0 +1,66 @@
+{% comment %}
+CONSOLIDATED KLAVIYO METRICS SNIPPET
+Author: Structured Agency
+{% endcomment %}
+
+<script type="text/javascript">
+  {% if request.page_type == 'product' %}
+  var _learnq = _learnq || [];
+
+  // VIEWED PRODUCT METRIC
+  var item = {
+    Name: {{ product.title| json }},
+  ProductID: {{ product.id | json }},
+  Categories: {{ product.collections | map: 'title' | json }},
+  ImageURL: "https:{{ product.featured_image.src|img_url:'grande' }}",
+    URL: "{{ shop.secure_url }}{{ product.url }}",
+      Brand: {{ product.vendor | json }},
+  Price: {{ product.price | money | json }},
+  CompareAtPrice: {{ product.compare_at_price_max | money | json }}
+  };
+  _learnq.push(['track', 'Viewed Product', item]);
+  _learnq.push(['trackViewedItem', {
+    Title: item.Name,
+    ItemId: item.ProductID,
+    Categories: item.Categories,
+    ImageUrl: item.ImageURL,
+    Url: item.URL,
+    Metadata: {
+      Brand: item.Brand,
+      Price: item.Price,
+      CompareAtPrice: item.CompareAtPrice
+    }
+  }]);
+
+  // ADDED TO CART METRIC
+  const addToCartButton = document.querySelectorAll('[data-atc-enabled-label="Add to cart"]');
+
+  var addToCart = function () {
+    _learnq.push(['track', 'Added to Cart', item]);
+  };
+
+  for (var i = 0; i < addToCartButton.length; i++) {
+    addToCartButton[i].addEventListener('click', addToCart, false);
+  };
+  {% endif %}
+
+  {% if request.page_type == 'page' %}
+  // VIEWED PAGE METRIC
+  var _learnq = _learnq || [];
+  var page = window.location.href.split('?')[0];
+  _learnq.push(['track', 'Viewed Page',
+    { url: page }
+  ]);
+  {% endif %}
+
+  {% if request.page_type == 'collection' %}
+  // VIEWED COLLECTION METRIC
+  var _learnq = _learnq || [];
+  var page = window.location.href;
+  _learnq.push(['track', 'Viewed Collection', {
+    Collection: {{ collection.title | json }},
+    url: page
+  }
+  ]);
+  {% endif %}
+</script>

@@ -1,0 +1,82 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'announcement' -%}
+      {%- if block.settings.text != blank -%}
+        <div class="announcement-bar min-h-[36px] py-2 leading-tight text-center {{ block.settings.text_color }} {{ block.settings.background_color }}" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+          <div class="container">
+            {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+            {%- endif -%}
+                <p class="announcement-bar__message h5">
+                  {{ block.settings.text | escape }}
+                  {%- if block.settings.link != blank -%}
+                    <span class="w-5 h-5 inline-block ml-2 align-middle">
+                      {% render 'icon-arrow' %}
+                    </span>
+                  {%- endif -%}
+                </p>
+            {%- if block.settings.link != blank -%}
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "class": "absolute top-0 inset-x-0 z-50",
+  "max_blocks": 1,
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        },
+        {
+          "type": "select",
+          "id": "text_color",
+          "label": "t:colors.settings.colors_text.label",
+          "options": [
+            {
+              "value": "text-white",
+              "label": "White"
+            }
+          ],
+          "default": "text-white"
+        },
+        {
+          "type": "select",
+          "id": "background_color",
+          "label": "t:colors.settings.colors_background.label",
+          "options": [
+            {
+              "value": "bg-purple-dark",
+              "label": "Purple (dark)"
+            }
+          ],
+          "default": "bg-purple-dark"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
+  }
+}
+{% endschema %}

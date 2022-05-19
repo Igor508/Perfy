@@ -1,0 +1,105 @@
+<div class="container py-12 md:py-20{% if section.settings.extra_top_padding %} pt-16 md:pt-32{% endif %}{% if section.settings.extra_bottom_padding %} pb-16 md:pb-36{% endif %}">
+  {% if section.settings.title != blank %}
+    <h2 class="text-center font-heading text-h1 font-bold">{{ section.settings.title }}</h2>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+  <div class="row features-carousel pt-8" data-section-type="features-carousel" data-section-id="{{ section.id }}">
+    <div class="glide relative {% if section.blocks.size < 4 %}no-glide{% endif %}">
+      {% if section.settings.badge != blank %}
+        <img src="{{ section.settings.badge | image_url: width: 192 }}" class="absolute left-0 md:left-[unset] md:right-4 top-4 md:top-0 transform -translate-y-1/2 md:translate-x-1/2 w-24 h-auto md:w-36 xl:w-48 z-20" alt="product Badge" loading="lazy">
+      {% endif %}
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+    {% for block in section.blocks %}
+      <li class="glide__slide col py-4 group">
+        <div class="bg-white border-2 border-purple-dark text-purple-dark rounded-lg shadow-purple pt-8 px-5 md:p-8 relative">
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 60, height: 60 }}" class="icon-block mb-4" alt="Icon" loading="lazy"/>
+          {% endif %}
+          {% if block.settings.title != blank %}
+            <h4 class="mb-4">{{ block.settings.title }}</h4>
+          {% endif %}
+          <p class="description mb-8 md:mb-0">{{ block.settings.content }}</p>
+        </div>
+      </li>
+    {% endfor %}
+      </ul>
+    </div>
+    <div class="glide__bullets {% if section.blocks.size < 4 %} md:hidden {% endif %}" data-glide-el="controls[nav]">
+      {%- for block in section.blocks -%}
+        <button class="glide__bullet" data-glide-dir="={{ forloop.index0 }}"></button>
+      {%- endfor -%}
+    </div>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Product Features",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "The Perfect Soda™",
+      "label": "Section Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "extra_top_padding",
+      "label": "Extra Top Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "extra_bottom_padding",
+      "label": "Extra Bottom Padding"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge",
+      "label": "Badge"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Features",
+      "blocks": [
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

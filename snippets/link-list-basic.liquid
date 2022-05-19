@@ -1,0 +1,13 @@
+<ul id="menu-{{ linklist.title | handleize }}" class="link-list-basic">
+
+{%- for link in linklist.links -%}
+
+  <li>
+  <a href="{{ link.url }}" title="{{ link.title | escape }}" class="inline-block transition-colors duration-500">
+      {{ link.title | escape }}
+    </a>
+  </li>
+
+{%- endfor -%}
+
+</ul>

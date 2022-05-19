@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "title": "",
+        "text_alignment": "text-left"
+      }
+    },
+    "16462423041354c247": {
+      "type": "apps",
+      "blocks": {
+        "2e78fedb-9741-453a-ba65-f13af39e9f2d": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "fruity-trial-pack",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2e78fedb-9741-453a-ba65-f13af39e9f2d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16462423041354c247"
+  ]
+}

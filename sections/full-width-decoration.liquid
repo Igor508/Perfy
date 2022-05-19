@@ -1,0 +1,142 @@
+{%- assign _s = section.settings -%}
+<div class="relative px-0 my-8 z-0">
+  {%- if _s.decoration_left != blank -%}
+    
+    <img
+      src="{{ _s.decoration_left | image_url: width: 192, height: 192 }}"
+      class="object-contain object-center absolute left-0 top-0 w-12 h-12 sm:w-24 sm:h-24 z-20"
+      alt=""
+      width="{{ _s.decoration_left.width}}"
+      height="{{ _s.decoration_left.height}}"
+      role="presentation"
+      aria-hidden="true"
+      loading="lazy"
+    >
+    
+  {%- endif -%}
+
+  {%- if _s.decoration_right != blank -%}
+    
+    <img
+      src="{{ _s.decoration_right | image_url: width: 160, height: 160 }}"
+      class="object-contain object-center absolute right-4 bottom-4 w-10 h-10 sm:w-20 sm:h-20 z-20"
+      alt=""
+      width="{{ _s.decoration_right.width}}"
+      height="{{ _s.decoration_right.height}}"
+      role="presentation"
+      aria-hidden="true"
+      loading="lazy"
+    >
+    
+  {%- endif -%}
+  
+  {% if _s.image_desktop != blank %}
+    {%- capture image -%}
+      <img
+        src="{{ _s.image_desktop | image_url }}"
+        class="hidden md:block w-full h-auto object-contain object-center"
+        alt="{{ _s.title }}"
+        width="{{ _s.image_desktop.width }}"
+        height="{{ _s.image_desktop.height }}"
+        loading="lazy"
+      >
+    {%- endcapture -%}
+    
+    {%- if _s.use_animations -%}
+      {%- assign width = _s.image_desktop.width | times: 1.0 -%}
+      {%- assign height = _s.image_desktop.height | times: 1.0 -%}
+
+      {%- capture padding_bottom -%}
+        {{  height | divided_by: width  | times: 100 }}%
+      {%- endcapture -%}
+
+      <div class="full-width-animation hidden relative z-10 sm:block" style="padding-bottom: {{ padding_bottom }};">
+        {{ image }} {{ image }}
+      </div>
+    {%- else -%}
+      {{ image }}
+    {%- endif -%}
+  {% endif %}
+
+  {% if _s.image_mobile != blank %}
+    {%- capture image -%}
+      <img
+        src="{{ _s.image_mobile | image_url }}"
+        class="w-full h-auto block object-contain object-center md:hidden"
+        alt="{{ _s.title }}"
+        loading="lazy"
+        width="{{ _s.image_mobile.width }}"
+        height="{{ _s.image_mobile.height }}"
+      >
+    {%- endcapture -%}
+    
+    {%- if _s.use_animations -%}
+      {%- assign width = _s.image_mobile.width | times: 1.0 -%}
+      {%- assign height = _s.image_mobile.height | times: 1.0 -%}
+
+      {%- capture padding_bottom -%}
+        {{  height | divided_by: width  | times: 100 }}%
+      {%- endcapture -%}
+
+      <div class="full-width-animation relative z-10 sm:hidden" style="padding-bottom: {{ padding_bottom }};">
+        {{ image }} {{ image }}
+      </div>
+    {%- else -%}
+      {{ image }}
+    {%- endif -%}
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Full Width Decoration",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Banner images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_animations",
+      "label": "Animate images?",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Decorative images"
+    },
+    {
+      "type": "image_picker",
+      "id": "decoration_left",
+      "label": "Decoration (left)"
+    },
+    {
+      "type": "image_picker",
+      "id": "decoration_right",
+      "label": "Decoration (right)"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Alt Text",
+      "default": "Perfy's Features"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Full Width Decoration"
+    }
+  ]
+}
+{% endschema %}

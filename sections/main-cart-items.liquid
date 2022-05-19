@@ -1,0 +1,115 @@
+{% comment %} {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+{% comment %} <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script> {% endcomment %}
+
+{%- liquid
+  assign has_trial_pack = false
+
+  for item in cart.items 
+    if item.product.type == 'Trial Pack'
+      assign has_trial_pack = true 
+      break
+    endif
+  endfor
+-%}
+
+<div data-cart-update-transition class="py-6 container transition-opacity {% if cart == empty %} is-empty{% endif %}">
+  <div class="title-wrapper-with-link flex items-center justify-start space-x-6">
+    <h1 class="font-bold text-[43px] md:text-[34px]">{{ 'sections.cart.title_html' | t }}</h1>
+
+    <div class="text-base leading-tight md:hidden">
+    {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }}
+   </div>
+    
+    <a class="sr-only" href="{{ routes.all_products_collection_url }}">
+      {{ 'general.continue_shopping' | t }}
+    </a>
+  </div>
+
+  <div class="cart__warnings">
+    <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
+    <a href="{{ routes.all_products_collection_url }}" class="button">
+      {{ 'general.continue_shopping' | t }}
+    </a>
+
+    {%- if shop.customer_accounts_enabled -%}
+      <h2 class="cart__login-title">{{ 'sections.cart.login.title' | t }}</h2>
+      <p class="cart__login-paragraph">
+        {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+      </p>
+    {%- endif -%}
+  </div>
+
+  <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+    {%- for item in cart.items -%}
+        {% for p in item.properties %}
+          {% if p.first contains 'Type' %}
+            <input type="hidden" name="discount" value="FREETRIAL" >        
+          {%endif%}
+        {% endfor %}
+      {%endfor%}
+    <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
+      <div class="js-contents">
+        {%- if cart != empty -%}
+          <table class="cart-items table-auto">
+            <thead class="hidden md:table-header-group">
+              <tr>
+                <th class="caption-with-letter-spacing" colspan="2" scope="col">
+                  <div class="sr-only">
+                    {{ 'sections.cart.headings.product' | t }}
+                  </div>
+                </th>
+
+                <th class="cart-items__heading--wide small-hide caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
+                <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
+                <th class="right caption-with-letter-spacing" colspan="1" scope="col">
+                  <div class="sr-only"> {{ 'sections.cart.headings.actions' | t }} </div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="block md:table-row-group">
+
+              {%- liquid
+                for item in cart.items 
+                  if has_trial_pack
+                    if item.product.type == 'Trial Pack'
+                      render 'cart-line-item', item: item, section: section
+                    else
+                      render 'cart-line-item-empty', item: item, section: section
+                    endif
+                  else
+                    render 'cart-line-item', item: item, section: section
+                  endif
+
+                endfor
+              %}
+
+            </tbody>
+          </table>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
+    <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+  </form>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-items.name",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.main-cart-items.settings.show_vendor.label"
+    }
+  ]
+}
+{% endschema %}

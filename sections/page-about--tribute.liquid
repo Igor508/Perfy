@@ -1,0 +1,101 @@
+
+<div class="bg-yellow py-16 md:py-32{%if section.settings.extra_top_padding %} pt-24 md:pt-40{% endif %}">
+  <div class="container">
+    <div class="row flex-col-reverse md:flex-row md:justify-between">
+      <div class="col w-full md:w-1/2">
+        {% if section.settings.title != blank %}
+          <h3 class="font-heading font-bold text-h2 mb-6 md:mb-12 mt-8 md:mt-0">
+            {{ section.settings.title }}
+          </h3>
+        {% endif %}
+
+
+        {% if section.settings.form_snippet != blank %}
+          {{ section.settings.form_snippet }}
+        {%- else -%}
+          {% render 'tribute-form' %}
+        {% endif %}
+      </div>
+      <div class="col w-full md:w-1/3">
+        {% if section.settings.image != blank %}
+          <img
+            src="{{ section.settings.image | image_url }}"
+            class="h-auto w-full rounded-lg"
+            alt="{{ section.settings.caption }}"
+            loading="lazy"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+          />
+        {% endif %}
+        {% if section.settings.caption != blank %}
+          <p class="text-center p-lg">
+            {{ section.settings.caption }}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+    <div class="row mt-8 md:mt-16">
+      {% for block in section.blocks %}
+        <div class="col w-full md:w-1/3 mb-4 md:mb-6">
+          <h5 class="text-h3 font-bold">{{ block.settings.title }}</h5>
+        </div>
+      {%endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page About Tribute",
+  "class": "bg-yellow",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "extra_top_padding",
+      "label": "Extra Top Padding"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Tribute Section image"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Image Caption",
+      "default": "My best friend, Scott"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Tribute Section Header",
+      "default": "Memorialize your loved one lost by overdose or suicide."
+    },
+    {
+      "type": "html",
+      "id": "form_snippet",
+      "label": "Form Snippet"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "name",
+      "name": "Name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Name for Tribute"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page About Tribute"
+    }
+  ],
+  "templates": ["page"]
+}
+{% endschema %}

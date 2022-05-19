@@ -1,0 +1,24 @@
+{%- assign title = linklist.title -%}
+
+<div class="mb-4">
+
+  <details class="lg:hidden" 
+    >
+      <summary class="h4 lg:mb-4 heading-black tracking-wider font-semibold text-left cursor-pointer relative pr-14">
+        {{ title }}
+
+        <div class="c-accordion__toggle-icon w-11 h-11 p-3 svg-wrap svg-wrap--full-size text-white absolute top-1 right-0"></div>
+      </summary>
+
+      <div class="px-1 pt-2 pb-3 transition-all"> {% render 'link-list-basic', linklist: linklist, slug: menu_slug %} </div>
+  </details>
+
+  <div class="hidden lg:block footer-policy">
+    <h6 class="h4 mb-4 heading-black tracking-wider font-semibold">
+      {{ title }}
+    </h6>
+  
+    {% render 'link-list-basic', linklist: linklist, slug: menu_slug %}
+  </div>
+
+</div>

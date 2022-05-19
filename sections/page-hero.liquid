@@ -1,0 +1,207 @@
+{%- capture hero_classes -%}
+  page-hero hero-splash-wrapper bg-gradient-to-b pb-24 relative
+
+  {% case section.settings.bg_gradient -%}
+    {%- when 'yellow_to_orange' -%}
+      from-yellow to-orange-deep
+    {%- when 'coral_to_light_orange' -%}
+      from-[#FF958D] to-[#FFB04E]
+    {%- when 'orange_to_yellow' -%}
+      from-orange-deep to-yellow
+  {%- endcase -%}
+
+  {% if section.settings.hide_image_mobile %} page-hero--hide-image-mobile {% endif %}
+{%- endcapture -%}
+
+
+<div class="{{ hero_classes | strip_newlines }}">
+
+  <div class="container flex h-full relative">
+    <div class="w-full md:w-3/5 text-left md:text-center py-12 md:flex md:flex-col md:justify-center md:items-center h-full z-20">
+
+      {% if section.settings.title != blank %}
+        <h1
+          class="font-heading font-bold {% if section.settings.display_size %}h2 {% else %}display-1 {% endif %} {{ section.settings.mobile_text_alignment }} {{ section.settings.desktop_text_alignment }} w-full mb-3 md:mb-5"
+          style="line-height: .9;"
+        >
+          {{ section.settings.title }}
+        </h1>
+
+      {% else %}
+
+        <h1
+          class="font-heading font-bold {% if section.settings.display_size %}h2 {% else %}display-1 {% endif %}  {{ section.settings.mobile_text_alignment }} {{ section.settings.desktop_text_alignment }} w-full"
+          style="line-height: .9;"
+        >
+          {{ page.title }}
+        </h1>
+
+      {% endif %}
+
+      {% if section.settings.content != blank %}
+        <h3 class="hero__subtitle p-lg text-left font-normal font-sans w-full pb-8">{{ section.settings.content }}</h3>
+      {% endif %}
+
+      {% if section.settings.cta_url != blank %}
+        <a class="btn btn-primary" href="{{ section.settings.cta_url }}">{{ section.settings.cta_label }}</a>
+      {% endif %}
+
+      {% if section.settings.extra_bottom_padding %}
+        <div class="pb-8 md:pb-12"></div>
+      {% endif %}
+
+    </div>
+
+    {% if section.settings.image != blank %}
+      <img
+        src="{{ section.settings.image | image_url: height: 800 }}"
+        alt="{% if section.settings.image.alt %}{{ section.settings.image.alt }}{% else %}Can of Perfy{% endif %}"
+        class="absolute page-hero-image z-10 {% if section.settings.hide_image_mobile or section.settings.mobile_image != blank %} hidden md:block {% endif %}"
+        loading="lazy"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+        {% if section.settings.desktop_image_max_width and section.settings.desktop_image_max_width > 0 %}
+          style="max-width: {{ section.settings.desktop_image_max_width }}px;"
+        {% endif %}
+      />
+    {% endif %}
+
+
+  </div>
+  {% comment %} // .container {% endcomment %}
+
+  {%- if section.settings.hide_image_mobile == false and section.settings.mobile_image -%}
+    <img
+      class="w-full h-auto pointer-events-none object-cover object-top md:hidden mx-auto -mb-24"
+      src="{{ section.settings.mobile_image | image_url: width: 1400 }}"
+      width="{{ section.settings.mobile_image.width }}"
+      height="{{ section.settings.mobile_image.height }}"
+      aria-hidden="true"
+      role="presentation"
+      loading="lazy"
+      alt="{{ section.settings.mobile_image.alt }}"
+      {% if section.settings.mobile_image_max_width and section.settings.mobile_image_max_width > 0 %}
+        style="max-width: {{ section.settings.mobile_image_max_width }}px;"
+      {% endif %}
+    >
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Page Hero",
+  "tag": "section",
+  "class": "hero-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "bg_gradient",
+      "options": [
+        {
+          "value": "yellow_to_orange",
+          "label": "Yellow to Orange"
+        },
+        {
+          "value": "coral_to_light_orange",
+          "label": "Coral to Light Orange"
+        },
+        {
+          "value": "orange_to_yellow",
+          "label": "Orange to Yellow"
+        }
+      ],
+      "default": "yellow_to_orange",
+      "label": "Hero Gradient"
+    },
+    {
+      "type": "checkbox",
+      "id": "extra_bottom_padding",
+      "label": "Extra Bottom Padding"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Hero Image"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_image_mobile",
+      "label": "Hide image on mobile",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Hero Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "display_size",
+      "label": "Display as Heading 2 style (smaller)"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Hero Content"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "Join Us",
+      "label": "CTA Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Link"
+    },
+    {
+      "type": "header",
+      "content": "Styles"
+    },
+    {
+      "type": "number",
+      "id": "mobile_image_max_width",
+      "label": "Mobile image max width",
+      "info": "Leave blank or enter \"0\" for no max width"
+    },
+    {
+      "type": "number",
+      "id": "desktop_image_max_width",
+      "label": "Desktop image max width",
+      "info": "Leave blank or enter \"0\" for no max width"
+    },
+    {
+      "type": "radio",
+      "id": "mobile_text_alignment",
+      "label": "Text alignment (mobile)",
+      "options": [
+        { "value": "text-center", "label": "Center" },
+        { "value": "text-left", "label": "Left" }
+      ],
+      "default": "text-left"
+    },
+    {
+      "type": "radio",
+      "id": "desktop_text_alignment",
+      "label": "Text alignment (desktop)",
+      "options": [
+        { "value": "md:text-center", "label": "Center" },
+        { "value": "md:text-left", "label": "Left" }
+      ],
+      "default": "md:text-left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Hero"
+    }
+  ],
+  "templates": ["page"]
+}
+{% endschema %}

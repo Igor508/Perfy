@@ -1,0 +1,100 @@
+<div class="py-12 text-center md:py-20{% if section.settings.extra_top_padding %} pt-16 md:pt-32{% endif %}{% if section.settings.extra_bottom_padding %} pb-16 md:pb-36{% endif %}">
+  {% if section.settings.title != blank %}
+    <h2 class="mx-4 text-center font-heading font-bold mb-10 relative z-10">{{ section.settings.title }}</h2>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+  <div class="pb-6" data-section-type="carousel" data-section-id="{{ section.id }}">
+  <div class="glide relative z-10">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+    {% for block in section.blocks %}
+    {% if block.settings.image != blank %}
+    <li class="glide__slide" data-slide-index="={{ forloop.index0 }}">
+      <div class="mb-12 aspect-w-1 aspect-h-1 relative">
+        <img
+          src="{{ block.settings.image | image_url: width: 400, height: 400 }}"
+          height="{{ block.settings.image.height }}"
+          width="{{ block.settings.image.width }}"
+          class="shadow-purple rounded-lg h-full object-cover object-center"
+          alt="{{ block.settings.image.alt }}"
+          loading="lazy"/>
+      </div>
+    </li>
+
+      
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  </div>
+  </div>
+  {% endif %}
+  {% if section.settings.cta_url != blank %}
+    <a class="mx-4 btn btn-primary relative z-10" href="{{ section.settings.cta_url }}">{{ section.settings.cta_label }}</a>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Image Gallery",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Join The Anti-Soda Soda Club",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "Join Us",
+      "label": "CTA Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "extra_top_padding",
+      "label": "Extra Top Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "extra_bottom_padding",
+      "label": "Extra Bottom Padding"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Gallery",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

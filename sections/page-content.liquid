@@ -1,0 +1,70 @@
+
+<div class="page-content {{ section.settings.background_color }} relative z-20">
+
+  {%- unless section.settings.hide_upper_curve -%}
+    <div class="absolute upper-curve text-coral-100 w-full z-20"><div class="md:hidden svg-wrap w-full rotate-180">{% render 'above-page-content-mobile.svg' %}</div><div class="hidden md:block svg-wrap w-full rotate-180">{% render 'above-page-content-desktop.svg' %}</div></div>
+  {%- endunless -%}
+
+  {%- unless section.settings.hide_lower_curve -%}
+    <div class="absolute lower-curve text-coral-100 w-full z-20"><div class="md:hidden svg-wrap w-full rotate-180">{% render 'below-page-content-mobile.svg' %}</div><div class="hidden md:block svg-wrap w-full rotate-180">{% render 'below-page-content-desktop.svg' %}</div></div>
+  {%- endunless -%}
+
+  <div class="container py-8">
+    <div class="md:w-2/3 rte {% if section.settings.alignment == 'center' %} mx-auto {% endif %}">
+    {{ page.content }}
+    </div>
+  </div>
+  {% comment %} // .container {% endcomment %}
+</div>
+
+{% schema %}
+{
+  "name": "Page Content",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "extra_padding",
+      "label": "Extra Padding"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_upper_curve",
+      "label": "Hide upper curve",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_lower_curve",
+      "label": "Hide lower curve",
+      "default": false
+    },
+    {
+      "type": "radio",
+      "id": "background_color",
+      "label": "Background color",
+      "options": [
+        { "value": "bg-transparent", "label": "Transparent" },
+        { "value": "bg-coral-100", "label": "Coral (light)"}
+      ],
+      "default": "bg-coral-100"
+    },
+    {
+      "type": "radio",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Content"
+    }
+  ],
+  "templates": ["page"]
+}
+{% endschema %}

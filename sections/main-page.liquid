@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="space-y-4 my-8 {{ section.settings.text_alignment }}">
+    <h1 class="h1 lg:text-d1 font-heading">
+      {%- capture page_title -%}
+
+        {%- if page.metafields.perfy.page_title != blank -%}
+          {{ page.metafields.perfy.page_title }}
+        {%- elsif section.settings.title != blank -%}
+          {{ section.settings.title }}
+        {%- else -%}
+          {{ page.title }}
+        {%- endif -%}
+
+      {%- endcapture -%}
+
+      {{ page_title | escape }}
+    </h1>
+
+    {%- if page.metafields.perfy.page_subtitle != blank -%}
+      <p class="p-lg">
+        {{ page.metafields.perfy.page_subtitle | escape }}
+      </p>
+    {%- endif -%}
+  </div>
+
+  <div class="rte">
+    {{ page.content }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "info": "Defaults to the page title."
+    },
+    {
+      "type": "radio",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "text-left", "label": "Left" },
+        { "value": "text-center", "label": "Center"}
+      ],
+      "default": "text-left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.page.presets.name"
+    }
+  ]
+}
+{% endschema %}

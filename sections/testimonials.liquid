@@ -1,0 +1,182 @@
+<div class="relative">
+  {%- if section.settings.show_badge -%}
+    <div class="absolute right-0 top-0 transform -translate-y-1/2 w-36 h-36 lg:w-48 lg:h-48">
+      {% render 'try-risk-free.svg' %}
+    </div>
+  {%- endif -%}
+<div class="container relative">
+  {% if section.settings.title != blank %}
+    <h2 class="font-heading text-h1 font-bold text-white pb-7 md:pb-16 text-center">{{ section.settings.title }}</h2>
+  {% endif %}
+  {% if section.blocks.size > 0 %}
+  <div class="testimonial-carousel row" data-section-type="testimonial-carousel" data-section-id="{{ section.id }}">
+    <div class="glide relative {% if section.blocks.size < 3 %}no-glide{% endif %}">
+      <div class="glide__track overflow-visible" data-glide-el="track">
+        <ul class="glide__slides">
+    {% for block in section.blocks %}
+    <li class="glide__slide my-8 group col w-full py-4" data-slide-index="={{ forloop.index0 }}">
+      <div class="bg-white border-2 border-purple-dark text-purple-dark rounded-lg shadow-yellow p-4 xl:px-6">
+
+        <div class="testimonial-block-header {% if block.settings.image != blank %} xl:flex xl:justify-between xl:flex-row-reverse {% endif %}">
+
+          {%- if block.settings.image -%}
+
+            <img
+              class="w-20 h-20 rounded-full mb-3"
+              srcset="
+                {{ block.settings.image | image_url: width: 84, height: 84, crop: 'center' }},
+                {{ block.settings.image | image_url: width: 168, height: 168, crop: 'center' }} 2x,
+                {{ block.settings.image | image_url: width: 252, height: 252, crop: 'center' }} 3x
+              "
+              alt="{{ block.settings.name }} {{ block.settings.titles }}"
+              loading="lazy"
+            >
+
+
+          {%- endif -%}
+
+          <div class="xl:pr-3">
+            {%- if block.settings.name != blank or block.settings.handle != blank  -%}
+
+              <div class="xl:text-lg font-semibold">
+
+                {%- if block.settings.name != blank -%}
+
+                  <span class="block xl:inline-block mr-1">{{ block.settings.name }}</span>
+
+                {%- endif -%}
+
+                {%- if block.settings.handle != blank -%}
+
+                  {% if block.settings.name != blank %} <span class="hidden xl:inline">|</span> {% endif %}<span class="block xl:inline-block ml-1">{{ block.settings.handle }}</span>
+
+                {%- endif -%}
+
+              </div>
+
+            {%- endif -%}
+
+            {%- if block.settings.titles != blank -%}
+
+              <div class="xl:text-lg">
+
+                {{ block.settings.titles }}
+
+              </div>
+
+            {%- endif -%}
+
+            <div class="stars mt-3 first-of-type:mt-0 mb-4 flex flex-row svg-wrap">
+              {% liquid
+                render 'reviews-star.svg'
+                render 'reviews-star.svg'
+                render 'reviews-star.svg'
+                render 'reviews-star.svg'
+                render 'reviews-star.svg'
+              %}
+            </div>
+          </div>
+        </div>
+
+        <p class="description text-lg mb-8 md:mb-0">{{ block.settings.content }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="glide__bullets {% if section.blocks.size < 3 %} md:hidden {% endif %}" data-glide-el="controls[nav]">
+  {%- for block in section.blocks -%}
+    <button class="glide__bullet" data-glide-dir="={{ forloop.index0 }}"></button>
+  {%- endfor -%}
+</div>
+</div>
+</div>
+  {% endif %}
+  <div class="pt-12 w-full text-center">
+  {% if section.settings.cta_url != blank %}
+    <a class="btn btn-primary-dark" href="{{ section.settings.cta_url }}">{{ section.settings.cta_label }}</a>
+  {% endif %}
+  {% if section.settings.cta_subtext != blank %}
+    <div class="text-white pt-4">{{ section.settings.cta_subtext }}</div>
+  {% endif %}
+  </div>
+</div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "class": "bg-purple-dark relative py-12 section-testimonials",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Join The Anti-Soda Soda Club",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "Join Us",
+      "label": "CTA Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Link"
+    },
+    {
+      "type": "text",
+      "id": "cta_subtext",
+      "label": "CTA Reinforcing Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "handle",
+          "label": "Social Media Handle"
+        },
+        {
+          "type": "text",
+          "id": "titles",
+          "label": "Titles of Individual"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Testimonial Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

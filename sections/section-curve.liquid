@@ -1,0 +1,69 @@
+{%- case section.settings.curve_id -%}
+    {%- when 'above-testimonials' -%}
+        <div class="h-auto {{ section.settings.curve_color }} w-full z-10 -mb-1">
+            <div class="md:hidden svg-wrap w-full rotate-180 {{ section.settings.curve_color }}">{% render 'above-testimonials-mobile.svg' %}</div>
+            <div class="hidden md:block svg-wrap w-full rotate-180 {{ section.settings.curve_color }}">{% render 'above-testimonials-desktop.svg' %}</div>
+        </div>
+    {%- when 'below-testimonials' -%}
+        <div class="h-auto {{ section.settings.curve_color }} w-full z-10 -mt-1">
+            <div class="md:hidden svg-wrap w-full rotate-180 {{ section.settings.curve_color }}">{% render 'below-testimonials-mobile.svg' %}</div>
+            <div class="hidden md:block svg-wrap w-full rotate-180 {{ section.settings.curve_color }}">{% render 'below-testimonials-desktop.svg' %}</div>
+        </div>
+    {%- when 'below-hero' -%}
+        <div class="h-auto {{ section.settings.curve_color }} w-full z-10 -mt-1">
+          <div class="md:hidden svg-wrap w-full rotate-180 {{ section.settings.curve_color }}">{% render 'below-hero-mobile.svg' %}</div>
+          <div class="hidden md:block svg-wrap w-full rotate-180 {{ section.settings.curve_color }}">{% render 'below-hero-desktop.svg' %}</div>
+        </div>
+    {%- else -%}
+{%- endcase -%}
+
+{% schema %}
+{
+  "name": "Section curve",
+  "settings": [
+    {
+      "type": "select",
+      "id": "curve_id",
+      "label": "Curve",
+      "options": [
+        {
+          "group": "Top",
+          "value": "above-testimonials",
+          "label": "Above testimonials"
+        },
+        {
+          "group": "Bottom",
+          "value": "below-testimonials",
+          "label": "Below testimonials"
+        },
+        {
+          "group": "Bottom",
+          "value": "below-hero",
+          "label": "Below hero"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "curve_color",
+      "label": "Color",
+      "options": [
+        {
+          "value": "text-purple-dark",
+          "label": "Purple dark"
+        },
+        {
+          "value": "text-yellow",
+          "label": "Yellow"
+        }
+      ],
+      "default": "text-purple-dark"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Curve"
+    }
+  ]
+}
+{% endschema %}

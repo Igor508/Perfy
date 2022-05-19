@@ -1,0 +1,425 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>{{ product.metafields.descriptors.subtitle.value }}<\/strong><\/p>",
+            "remove_spacing": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "185d8032-0ab3-4245-a398-3245c69a4898": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "c5d381f4-2663-45af-8a8e-c00335237aed": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>It starts with a sip<\/strong><\/p><p>Once you try Perfy, we know you’ll love it. Get three cans free. Just pay $9.99 shipping. See below for more information.<\/p>",
+            "remove_spacing": false
+          }
+        },
+        "53632918-0aec-4255-bca6-65a854b3a7a8": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>{{ product.metafields.perfy.short_description | metafield_tag }}<\/p>",
+            "remove_spacing": false
+          }
+        },
+        "7882440e-c688-4a1d-99e6-301aa2b548b6": {
+          "type": "installments-form",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_price_per_unit": false,
+            "price_suffix": "{{ product.metafields.perfy.price_suffix.value }}"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "hide_quantity_selector": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "e536bb30-971f-4a7d-95b2-5b37b344a343": {
+          "type": "utility_links",
+          "disabled": true,
+          "settings": {
+            "left_text": "",
+            "left_tooltip": "Try 100% risk free",
+            "left_text_url": "",
+            "left_text_url_label": "Start your free trial",
+            "right_text": "$5 flat rate shipping",
+            "right_tooltip": "$5 flat rate shipping",
+            "right_text_url": "#",
+            "right_text_url_label": "Shipping Policy"
+          }
+        },
+        "cc5c06cc-bd53-4522-9cbc-023c75fcb22c": {
+          "type": "free-trial-info",
+          "settings": {
+            "text": "<p><strong>What's next?<\/strong><\/p><p>The Perfy Trial Pack leads to our subscription program. Just cancel or modify within 14 days. No strings attached. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "185d8032-0ab3-4245-a398-3245c69a4898",
+        "c5d381f4-2663-45af-8a8e-c00335237aed",
+        "53632918-0aec-4255-bca6-65a854b3a7a8",
+        "7882440e-c688-4a1d-99e6-301aa2b548b6",
+        "price",
+        "quantity_selector",
+        "buy_buttons",
+        "share",
+        "e536bb30-971f-4a7d-95b2-5b37b344a343",
+        "cc5c06cc-bd53-4522-9cbc-023c75fcb22c"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "redirect_to_checkout": false,
+        "enable_video_looping": false
+      }
+    },
+    "details": {
+      "type": "product-details",
+      "blocks": {
+        "44921d49-8235-4f31-8740-dc9f7516c898": {
+          "type": "description",
+          "settings": {}
+        },
+        "4fad0cc2-dc52-48c4-b0d4-33eeed384123": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_title": "Why Subscribe?",
+            "accordion_content": "<p>• <strong>Save 15%<\/strong> on every order<br\/>• Cancel or pause <strong>any time<\/strong><br\/>• <strong>Manage orders<\/strong> via your subscription portal or text<br\/>• <strong>Exclusive access<\/strong> to limited edition merch you won’t find anywhere else. • Exclusive<strong> free shipping offers<\/strong> throughout the year<br\/>• First access to <strong>new flavors<\/strong> (yes, before email AND SMS)<br\/>• <strong>First access<\/strong> to Perfy’s Web3 initiatives<\/p>",
+            "open": true
+          }
+        },
+        "e4310d9c-9226-4502-8283-b1c1a22aa522": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_title": "Ingredients",
+            "accordion_content": "<p>{{ product.metafields.perfy.ingredients | metafield_tag }}<\/p>",
+            "open": false
+          }
+        },
+        "e0137ddf-83c3-40e6-8d79-0d6b5e1720d0": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_title": "Nutrition Facts",
+            "accordion_content": "<p>{{ product.metafields.perfy.nutrition_facts.value }}<\/p>",
+            "open": false
+          }
+        },
+        "9143a4f6-f283-4b08-9612-5d6df5826eb4": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_title": "FAQs",
+            "accordion_content": "<p><strong>Q: What is Perfy?<br\/><\/strong>A: Perfy is the functional soda that supports calm + focus + balance because it's made with the perfect combination of delicious and functional ingredients like real fruit (not from concentrate), nootropics & adaptogens. <br\/><br\/><strong>Q: Why Perfy? <br\/><\/strong>A: I've lost over a dozen close friends over the past three years. All tragically. All way too soon. I created Perfy because I love soda and the formula helps me with calm + focus + balance. Part of the proceeds will go towards honoring and remembering those we have lost through various charities that benefit substance abuse and suicide prevention. <br\/><br\/><strong>Q: What does Perfy mean?<br\/><\/strong>A: When I was just a kid, I would always call my mom \"perfy.\" I don't think I was able to pronounce perfect or pretty or somethin'.  She's still both of those things to me...and perfy is named in honor of her. <\/p><p><\/p><p><a href=\"\/pages\/faq\" title=\"FAQ\">View all FAQS<\/a><\/p>",
+            "open": false
+          }
+        },
+        "b1d71d83-07f8-452f-a4b0-2db02412edf0": {
+          "type": "accordion_row",
+          "settings": {
+            "accordion_title": "What's Inside",
+            "accordion_content": "<p><strong>What's inside?<\/strong><\/p><p>• real fruit not from concentrate<\/p><p>• stevia, monk fruit, and allulose<\/p><p>• L-theanine + ashwagandha or turmeric<br\/><\/p><p><strong>What's not inside?<\/strong><\/p><p>• cane sugar<\/p><p>• high fructose corn syrup<\/p><p>• artificial sweeteners<\/p><p>• artificial colors<\/p><p>• preservatives<\/p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "44921d49-8235-4f31-8740-dc9f7516c898",
+        "4fad0cc2-dc52-48c4-b0d4-33eeed384123",
+        "e4310d9c-9226-4502-8283-b1c1a22aa522",
+        "e0137ddf-83c3-40e6-8d79-0d6b5e1720d0",
+        "9143a4f6-f283-4b08-9612-5d6df5826eb4",
+        "b1d71d83-07f8-452f-a4b0-2db02412edf0"
+      ],
+      "settings": {}
+    },
+    "164150099330963d7d": {
+      "type": "icons",
+      "blocks": {
+        "1641500993703a1aa8-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Low_Sugar.png",
+            "title": "3g-4g sugar"
+          }
+        },
+        "1641500993703a1aa8-1": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/No_Artificial.png",
+            "title": "nothing artificial"
+          }
+        },
+        "1641500993703a1aa8-2": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/No_Concentrate.png",
+            "title": "not from concentrate"
+          }
+        },
+        "1641500993703a1aa8-3": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Adaptogens..png",
+            "title": "adaptogens"
+          }
+        },
+        "1641500993703a1aa8-4": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nootropics.png",
+            "title": "nootropics"
+          }
+        },
+        "1641500993703a1aa8-5": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Caffeine_Free.png",
+            "title": "caffeine-free"
+          }
+        }
+      },
+      "block_order": [
+        "1641500993703a1aa8-0",
+        "1641500993703a1aa8-1",
+        "1641500993703a1aa8-2",
+        "1641500993703a1aa8-3",
+        "1641500993703a1aa8-4",
+        "1641500993703a1aa8-5"
+      ],
+      "settings": {
+        "title": "What Makes Us Perfy?",
+        "extra_top_padding": false,
+        "extra_bottom_padding": false
+      }
+    },
+    "1642175371400836c3": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "above-testimonials",
+        "curve_color": "text-purple-dark"
+      }
+    },
+    "16418364456fbc1b58": {
+      "type": "testimonials",
+      "blocks": {
+        "1641836445927bcf99-0": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "handle": "",
+            "titles": "",
+            "content": "“The citrus was delish! Tried it with\nthe wife and my parents. My mom is\ntype 1 diabetic and thought it was\nvery good and really appreciated the\ningredients. She was very impressed.”"
+          }
+        },
+        "1641836445927bcf99-1": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "handle": "",
+            "titles": "",
+            "content": "“I will confess: I am not a regular soda drinker, I always find it too sweet. But this is so tasty, I would absolutely buy this again.”"
+          }
+        },
+        "0cf8cf9a-a897-4128-904f-3e527c43662a": {
+          "type": "testimonial",
+          "settings": {
+            "name": "",
+            "handle": "",
+            "titles": "",
+            "content": "\"Really good stuff - I literally never drink soda ever bc there’s always an ingredient that I’m Leary of. Even in “healthy” sodas. But these are 🙌 you should be super proud!\""
+          }
+        }
+      },
+      "block_order": [
+        "1641836445927bcf99-0",
+        "1641836445927bcf99-1",
+        "0cf8cf9a-a897-4128-904f-3e527c43662a"
+      ],
+      "settings": {
+        "title": "Join The Anti-Soda Soda Club",
+        "cta_label": "Shop All Sodas",
+        "cta_url": "shopify:\/\/collections\/flavors",
+        "cta_subtext": ""
+      }
+    },
+    "1642175375beb14e78": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "below-testimonials",
+        "curve_color": "text-purple-dark"
+      }
+    },
+    "164126670760bf3f5d": {
+      "type": "comparison",
+      "blocks": {
+        "16412667078c21fb71-0": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Logo_-_Dark_Purple_256x256_crop_center_cb0cf6cb-20fe-44d7-8f98-846c59d4d66d.png",
+            "title": "Perfy",
+            "calories": "20",
+            "sugar": "3g-4g",
+            "net_carbs": "5g",
+            "functional": true,
+            "all_natural": true
+          }
+        },
+        "16412667078c21fb71-1": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Hawaiian_Punch.png",
+            "title": "Hawaiian Punch",
+            "calories": "80",
+            "sugar": "21g",
+            "net_carbs": "22g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "c3d81507-1201-4027-9359-6433c437d199": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Cactus_Cooler.png",
+            "title": "Cactus Cooler",
+            "calories": "150",
+            "sugar": "39g",
+            "net_carbs": "40g",
+            "functional": false,
+            "all_natural": false
+          }
+        },
+        "16412667078c21fb71-2": {
+          "type": "brand",
+          "settings": {
+            "is_primary": false,
+            "image": "shopify:\/\/shop_images\/Squirt.png",
+            "title": "Squirt",
+            "calories": "170",
+            "sugar": "44g",
+            "net_carbs": "45g",
+            "functional": false,
+            "all_natural": false
+          }
+        }
+      },
+      "block_order": [
+        "16412667078c21fb71-0",
+        "16412667078c21fb71-1",
+        "c3d81507-1201-4027-9359-6433c437d199",
+        "16412667078c21fb71-2"
+      ],
+      "settings": {
+        "title": "Perfy vs. Big Soda",
+        "subtext": "The soda you can still drink...even after you stop drinking soda.",
+        "cta_label": "Join Us",
+        "cta_url": ""
+      }
+    },
+    "1641500995dc25440c": {
+      "type": "featured-products",
+      "blocks": {
+        "164150099531d1d635-0": {
+          "type": "product",
+          "settings": {
+            "product": "tropical-citrus"
+          }
+        },
+        "164150099531d1d635-1": {
+          "type": "product",
+          "settings": {
+            "product": "blood-orange-yuzu"
+          }
+        },
+        "164150099531d1d635-2": {
+          "type": "product",
+          "settings": {
+            "product": "fruit-punch"
+          }
+        },
+        "4d478883-45f5-4431-8f3c-23fd01e4c394": {
+          "type": "product",
+          "settings": {
+            "product": "fruity-variety-pack"
+          }
+        }
+      },
+      "block_order": [
+        "164150099531d1d635-0",
+        "164150099531d1d635-1",
+        "164150099531d1d635-2",
+        "4d478883-45f5-4431-8f3c-23fd01e4c394"
+      ],
+      "settings": {
+        "title": "Try Our Other Flavors"
+      }
+    },
+    "1646241985e6e375be": {
+      "type": "apps",
+      "blocks": {
+        "95fa19f0-a70a-4d31-a8fa-2f43eea1ee62": {
+          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "fruity-trial-pack",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "95fa19f0-a70a-4d31-a8fa-2f43eea1ee62"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "details",
+    "164150099330963d7d",
+    "1642175371400836c3",
+    "16418364456fbc1b58",
+    "1642175375beb14e78",
+    "164126670760bf3f5d",
+    "1641500995dc25440c",
+    "1646241985e6e375be"
+  ]
+}

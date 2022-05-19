@@ -1,0 +1,42 @@
+<template id="flash-message">
+  <div
+    class="absolute p-4 text-xl text-center bg-gradient-to-b from-coral to-orange-light text-purple-dark"
+  >
+    <button type="button" ></button>
+    <button
+      class="
+        close-btn cursor-pointer absolute right-0 border-2 border-purple-dark rounded-full top-1/2 -mt-4 appearance-none p-2 w-10 h-10 svg-wrap svg-wrap--full-size bg-white text-purple-dark
+        hover:bg-gradient-to-b hover:from-orange-light hover:to-coral-top
+        focus:bg-gradient-to-b focus:from-orange-light focus:to-coral-top
+        transition-all
+      "
+      type="button"
+      aria-label="Close cart"
+    >
+      <svg
+        aria-hidden="true"
+        role="presentation"
+        focusable="false"
+        viewBox="0 0 15 15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m13.5 14.3c-.2 0-.4-.1-.5-.2l-12.5-12.6c-.3-.3-.3-.8 0-1.1s.8-.3 1.1 0l12.4 12.6c.3.3.3.8 0 1.1-.1.1-.3.2-.5.2z"
+        />
+        <path
+          d="m1 14.3c-.2 0-.4-.1-.5-.2-.3-.3-.3-.8 0-1.1l12.5-12.5c.3-.3.8-.3 1.1 0s.3.8 0 1.1l-12.6 12.4c-.1.2-.3.3-.5.3z"
+        />
+      </svg>
+  
+      <div class="sr-only">Close message</div>
+    </button>
+
+    {{ message }}
+  </div>
+</template>
+
+<div class="flash-message">
+
+
+  
+</div>

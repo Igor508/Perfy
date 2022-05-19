@@ -1,0 +1,155 @@
+<div class="relative pb-20 pt-28 md:pt-20">
+  <div class="fruit-left"><img src="{{ 'Pineapple.png' | asset_img_url: 'x300' }}" loading="lazy" alt="fruit" role="presentation" aria-hidden="true"></div>
+  <div class="fruit-right"><img src="{{ 'Passionfruit.png' | asset_img_url: '160x' }}" loading="lazy" alt="fruit" role="presentation" aria-hidden="true"></div>
+  <div class="fruit-right-bottom"><img src="{{ 'BloodOrange.png' | asset_img_url: 'x300' }}" loading="lazy" alt="fruit" role="presentation" aria-hidden="true"></div>
+  <div class="container">
+    <div class="py-6 md:py-16 relative z-10">
+    {% if section.settings.title != blank %}
+      <h2 class="font-heading h1 font-bold text-center mb-1 text-purple-dark">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtext != blank %}
+      <p class="p-lg text-center text-purple-dark">{{ section.settings.subtext }}</p>
+    {% endif %}
+    </div>
+
+    {% if section.blocks.size > 0 %}
+    <div class="rounded-lg border-2 border-purple-dark shadow-purple py-1 bg-white z-10 relative max-w-[900px] mx-auto">
+      <table class="text-purple-dark bg-white w-full">
+        <tr class="h-20">
+          <th class="px-1"></th>
+          <th class="px-1">Calories</th>
+          <th class="px-1">Sugar</th>
+          <th class="px-1">Net Carbs</th>
+          <th class="px-1">Functional Ingredients</th>
+          <th class="px-1 hidden sm:table-cell">All-Natural Ingredients</th>
+        </tr>
+      {% for block in section.blocks %}
+        <tr class="border-t-2 border-purple-dark h-20 text-center text-lg md:text-2xl {% if block.settings.is_primary %} font-bold {% endif %}">
+          <td>
+            <img
+              src="{{ block.settings.image | image_url: height: 100 }}"
+              class="icon-block mx-auto pl-4 py-2"
+              alt="{{ block.settings.title }} logo"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+              loading="lazy"
+            />
+            <div class="sr-only">{{ block.settings.title }}</div>
+          </td>
+          <td>{{ block.settings.calories }}</td>
+          <td>{{ block.settings.sugar }}</td>
+          <td>{{ block.settings.net_carbs }}</td>
+          <td>{% if block.settings.functional %}<span class="text-green">&#9989;</span><span class="sr-only">yes</span>{% else %}<span class="text-red">&#10060;</span>{% endif %}</td>
+          <td class="hidden sm:table-cell">{% if block.settings.all_natural %}<span class="text-green">&#9989;</span><span class="sr-only">yes</span>{% else %}<span class="text-red">&#10060;</span>{% endif %}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+    {% endif %}
+    {% if section.settings.cta_url != blank %}
+      <div class="mt-12 text-center">
+        <a class="btn btn-primary btn-border" href="{{ section.settings.cta_url }}">{{ section.settings.cta_label }}</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Comparison",
+  "class": "section-comparison-table",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Perfy vs. Big Soda",
+      "label": "Section Title"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "default": "The soda you can still drink...even after you stop drinking soda.",
+      "label": "Description Text"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "default": "Join Us",
+      "label": "CTA Button Label"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "is_primary",
+          "label": "Is primary?",
+          "default": false,
+          "info": "The primary entry in the table is for the Perfy row, and will bold the text to set it apart from the other rows in the table."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Brand Logo"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Other Brand",
+          "label": "Brand Name"
+        },
+        {
+          "type": "text",
+          "id": "calories",
+          "label": "Calories"
+        },
+        {
+          "type": "text",
+          "id": "sugar",
+          "label": "Sugar"
+        },
+        {
+          "type": "text",
+          "id": "net_carbs",
+          "label": "Net Carbs"
+        },
+        {
+          "type": "checkbox",
+          "id": "functional",
+          "label": "Functional Ingredients"
+        },
+        {
+          "type": "checkbox",
+          "id": "all_natural",
+          "label": "All-Natural Ingredients"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison",
+      "blocks": [
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

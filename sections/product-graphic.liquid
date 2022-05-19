@@ -1,0 +1,50 @@
+{%- for block in section.blocks -%}
+  {% case block.type %}
+      
+    {%- when 'graphic' -%}
+      {%- if block.settings.image != blank and block.settings.product.handle == product.handle -%}
+        <img
+          class="block pointer-events-none w-full h-auto"
+          aria-hidden="true"
+          role="presentation"
+          src="{{ block.settings.image | image_url: width: 2560, format: 'webp' }}"
+          alt="{{ block.settings.image.alt }}"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          loading="lazy"
+        >
+      {%- endif -%}
+    
+  {% endcase %}
+{%- endfor -%}
+
+{% schema %}
+  {
+    "name": "Product graphics",
+    "class": "product-graphics",
+    "blocks": [
+      {
+        "type": "graphic",
+        "name": "Fruit graphic",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Graphic image"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product",
+            "info": "The corresponding product this graphic should show up on."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product graphics"
+      }
+    ]
+  }
+{% endschema %}

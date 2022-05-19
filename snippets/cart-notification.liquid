@@ -1,0 +1,54 @@
+{% comment %}
+    Renders cart notification
+
+    Accepts:
+    - color_scheme: {String} sets the color scheme of the notification (optional)
+
+    Usage:
+    {% render 'cart-notification' %}
+{% endcomment %}
+
+<cart-notification>
+  <div class="cart-notification-wrapper">
+    <div id="cart-notification"
+      class="cart-notification focus-inset fixed z-50 top-4 left-1/2 p-0 border-0 max-w-md w-full"
+      aria-modal="true"
+      aria-label="{{ 'general.cart.item_added' | t }}"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="relative text-center rounded-lg border-2 border-purple-dark p-5 bg-gradient-to-br from-coral-top to-coral-bottom">
+        <div class="cart-notification__header mt-6">
+          <h2 class="h4 leading-tight font-bold space-x-3 mx-auto">
+            <div class="inline-block w-6 h-6 svg-wrap svg-wrap--full-size"> {%- render 'icon-checkmark' -%} </div>
+            {{ 'general.cart.item_added' | t }}
+          </h2>
+
+          <button
+            type="button"
+            class="cart-notification__close mt-4 svg-wrap svg-wrap--full-size text-purple w-12 h-12 p-4 absolute right-2 top-2 modal__close-button link link--text focus-inset hover:bg-orange-light focus:bg-orange-light rounded-full border-2 border-transparent hover:border-purple-dark focus:border-purple-dark"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
+            <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="#icon-close"></svg>
+          </button>
+        </div>
+
+        <div id="cart-notification-product" class="cart-notification-product empty:hidden flex justify-center items-center"></div>
+        <div class="cart-notification__links text-center space-y-4 mt-4 lg:space-y-0 lg:flex lg:items-center lg:justify-center lg:flex-row-reverse">
+          <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form" class="lg:ml-4">
+            <button class="btn btn-primary btn-border" name="checkout">{{ 'sections.cart.checkout' | t }}</button>
+          </form>
+          <button type="button" class="link button-label">{{ 'general.continue_shopping' | t }}</button>
+        </div>
+
+        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="underline hover:no-underline focus:no-underline inline-block mt-8 text-sm"></a>
+      </div>
+    </div>
+  </div>
+</cart-notification>
+
+{% style %}
+  .cart-notification {
+    display: none;
+  }
+{% endstyle %}

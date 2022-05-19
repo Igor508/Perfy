@@ -1,0 +1,78 @@
+<div class="flex flex-col xs:flex-row xs:justify-between flex-wrap text-left xs:space-x-4 leading-tight">
+    {%- if _block.left_text != blank-%}
+
+        <div class="my-4 relative">
+            <button type="button" role="popover-box" class="popover-toggle popover-toggle-left" aria-controls="tooltip-left" aria-haspopup="true" aria-expanded="false">
+                {{ _block.left_text }}
+ 
+                <span class="svg-wrap inline-block align-middle transition-opacity group-focus-visible:opacity-75 group-hover:opacity-75 h-4 w-4">
+                    {% render 'information.svg' %}
+                </span>
+            </button>
+
+            <div class="popover z-30 absolute top-full left-0 pt-3" role="tooltip" id="tooltip-left">
+                <div class="popover-inner rounded-lg relative text-white py-3 px-4 bg-purple-dark">
+                    <p class="text-base">{{ _block.left_tooltip }}</p>
+
+                    {% if _block.left_text_url %}
+                        <p class="text-base mt-3">
+                            <a class="underline hover:opacity-75 focus-visible:opacity-75" href="{{ _block.left_text_url }}">
+                                {{ _block.left_text_url_label }}
+                            </a>
+                        </p>
+                    {% endif %}
+
+                    <button role="button" class="tapicon-close popover-close absolute -top-1 -right-1 p-3 z-50" type="button">
+                        <span aria-hidden="true" class="svg-wrap svg-wrap--full-size w-5 h-5 p-1 block">
+                            {% render 'icon-x.svg' %}
+                        </span>
+
+                        <span class="sr-only">Close popup</span>
+                    </button>
+
+                    <div class="popover-arrow absolute border-x-transparent border-b-8 b border-x-8 border-b-purple-dark bottom-full"></div>
+                </div>
+
+            </div>
+        </div>
+
+    {%- endif -%}
+
+    {%- if _block.right_text != blank -%}
+        <div class="xs:my-4 relative">
+            <button type="button" role="button" class="popover-toggle{% if _block.left_text != blank %} popover-toggle-right{% endif %}" aria-controls="#tooltip-right" aria-haspopup="true" aria-expanded="false">
+                {{ _block.right_text }}
+ 
+                <span class="svg-wrap inline-block align-middle transition-opacity group-focus-visible:opacity-75 group-hover:opacity-75 h-4 w-4">
+                    {% render 'information.svg' %}
+                </span>
+            </button>
+
+            <div class="popover z-30 absolute top-full left-0 xs:left-auto xs:right-0 pt-3" role="tooltip" id="tooltip-right">
+                <div class="popover-inner rounded-lg relative text-white py-3 pl-4 pr-8 bg-purple-dark">
+                    <p class="text-base">{{ _block.right_tooltip }}</p>
+
+                    {% if _block.right_text_url %}
+                        <p class="text-base mt-3">
+                            <a class="underline hover:opacity-75 focus-visible:opacity-75" href="{{ _block.right_text_url }}">
+                                {{ _block.right_text_url_label }}
+                            </a>
+                        </p>
+                    {% endif %}
+
+                    <button role="button" class="tapicon-close popover-close absolute -top-1 -right-1 p-3 z-50" type="button">
+                        <span aria-hidden="true" class="svg-wrap svg-wrap--full-size w-5 h-5 p-1 block">
+                            {% render 'icon-x.svg' %}
+                        </span>
+
+                        <span class="sr-only">Close popup</span>
+                    </button>
+
+                    <div class="popover-arrow absolute border-x-transparent border-b-8 b border-x-8 border-b-purple-dark bottom-full left-8 xs:left-1/2 xs:-ml-1"></div>
+
+                </div>
+
+            </div>
+        </div>
+    {%- endif -%}
+</div>

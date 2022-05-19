@@ -1,0 +1,50 @@
+
+<div class="container pb-8 md:pb-16">
+  <div class="max-w-3xl mx-auto border-2 border-purple-dark shadow-purple p-4 xl:p-8 bg-white rounded-lg space-y-3">
+
+  {%- for block in section.blocks -%}
+    <details class="border-b-2 border-purple-dark" 
+      {% if block.settings.open_by_default %} open {% endif %}
+    >
+      <summary class="h3 pb-3 font-bold cursor-pointer relative pr-14">
+        {{ block.settings.title | escape }}
+
+        <div class="c-accordion__toggle-icon w-11 h-11 p-3 svg-wrap svg-wrap--full-size text-purple-dark absolute top-1 right-0"></div>
+      </summary>
+
+      <div class="pb-6 rte"> {{ block.settings.content }} </div>
+    </details>
+
+  {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page-faqs.name",
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "t:sections.main-page-faqs.blocks.faq.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.main-page-faqs.blocks.faq.settings.question.label"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "t:sections.main-page-faqs.blocks.faq.settings.answer.label",
+          "default": "<p></p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.page-faqs.presets.name"
+    }
+  ]
+}
+{% endschema %}

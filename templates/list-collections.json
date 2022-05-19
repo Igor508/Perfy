@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "image_padding": false
+      }
+    },
+    "1644523972466fb948": {
+      "type": "featured-products",
+      "blocks": {
+        "1644523972aeaf1765-0": {
+          "type": "product",
+          "settings": {
+            "product": "blood-orange-yuzu"
+          }
+        },
+        "1644523972aeaf1765-1": {
+          "type": "product",
+          "settings": {
+            "product": "fruit-punch"
+          }
+        },
+        "1644523972aeaf1765-2": {
+          "type": "product",
+          "settings": {
+            "product": "tropical-citrus"
+          }
+        },
+        "81f59472-46c0-4056-bff4-f59b8bf54552": {
+          "type": "product",
+          "settings": {
+            "product": "fruity-variety-pack"
+          }
+        }
+      },
+      "block_order": [
+        "1644523972aeaf1765-0",
+        "1644523972aeaf1765-1",
+        "1644523972aeaf1765-2",
+        "81f59472-46c0-4056-bff4-f59b8bf54552"
+      ],
+      "settings": {
+        "title": "Find The Perfect Flavor"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1644523972466fb948"
+  ]
+}
