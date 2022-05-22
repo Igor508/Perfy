@@ -2,10 +2,95 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "text_alignment": "text-left"
+      }
+    },
+    "1652986197957ff575": {
+      "type": "richtext",
+      "settings": {
+        "ptop": 210,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "title": "Vegan Soda by Perfy | What is Veganism - Vegan Alcoholic Drinks",
+        "subtitle": "<p>Interested in a healthy vegan alternative to soda? We discuss what veganism is, what vegan soda is, the benefits of vegan soda, vegan alcoholic drinks, and more!<br\/><br\/><\/p>",
+        "desc": ""
+      }
+    },
+    "16529862181517f803": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_7130.jpg",
+        "image_pos": "left",
+        "title": "Vegan Soda",
+        "desc": "<p>With the increase in the popularity of veganism, you may be wondering what veganism is and if you can find your favorite foods in vegan options.<br\/><br\/>Let's discuss these questions in addition to what vegan soda is, what the benefits of vegan soda are, and a few great vegan alcoholic drink options.<\/p>"
+      }
+    },
+    "1652986277719334dc": {
+      "type": "richtext",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "title": "What is Veganism?",
+        "subtitle": "<p>Veganism is the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals.<\/p><p>A follower of veganism is known as a vegan. Distinctions are sometimes made between several categories of veganism.<\/p>",
+        "desc": "<p>Dietary vegans also called \"strict vegetarians\" eschew all animal flesh and by-products, such as eggs or dairy.<\/p><p>Ethical vegans reject the commodification of animals. They do not eat meat because they oppose the practices involved in the process of packaging meat products.<\/p><p>Environmental vegans focus on conservation, rejecting the idea that it is necessary to consume animals to sustain human life.<\/p>"
+      }
+    },
+    "1652986242fc0bc2b2": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_6736.jpg",
+        "image_pos": "right",
+        "title": "What is Perfy Vegan Soda?",
+        "desc": "<p>Vegan soda is a type of carbonated soft drink that does not contain any animal products. This includes ingredients such as milk, cream, or honey.<br\/><br\/>Perfy vegan soda utilizes all-natural ingredients including natural sweeteners like stevia, monk fruit, and allulose, real fruit juices, and nootropics and adaptogens.<br\/><br\/>These ingredients are not only vegan but also keto-friendly, low carb, low sugar, and gluten-free!<\/p>"
+      }
+    },
+    "1652986331d1f757e6": {
+      "type": "richtext",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "title": "Additional Benefits of Perfy Vegan Soda",
+        "subtitle": "<p>There are so many benefits of vegan soda over traditional sodas. Some of the benefits include:<\/p>",
+        "desc": "<p>Less sugar than traditional sodas.<\/p><p>Keto-friendly!<\/p><p>Fewer calories. This can be helpful for those trying to lose weight or maintain a healthy weight.<\/p><p>No artificial ingredients.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>Low carb.<\/p><p>No GMOs.<\/p><p>Perfy vegan soda was developed to boost cognition and mood while mitigating stress and anxiety. We do so with a blend of nootropics and adaptogens like L-theanine, ashwagandha, and turmeric.<\/p>"
+      }
+    },
+    "165298638805d12da9": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 90,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_6460.jpg",
+        "image_pos": "left",
+        "title": "Vegan Alcoholic Drink Recipes",
+        "desc": "<p>If you're looking for a way to enjoy vegan alcoholic beverages, consider mixing a vegan soda, like Perfy, with liquor. From whiskey to vodka, bourbon, rum, or gin, there are many ways to enjoy an alcoholic beverage while remaining vegan.<br\/><br\/>Here are a few delicious vegan alcoholic drink recipes:<br\/><br\/><\/p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1652986197957ff575",
+    "16529862181517f803",
+    "1652986277719334dc",
+    "1652986242fc0bc2b2",
+    "1652986331d1f757e6",
+    "165298638805d12da9"
   ]
 }

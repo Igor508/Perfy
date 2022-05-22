@@ -2,10 +2,96 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "text_alignment": "text-left"
+      }
+    },
+    "165295124464b05aad": {
+      "type": "richtext",
+      "settings": {
+        "ptop": 210,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "title": "Low-Carb Soda | Benefits of Low-Carb Soda - Low-Carb Alcoholic Drinks",
+        "subtitle": "<p>Interested in a healthy low-carb alternative to soda? We discuss what low-carb soda is, the benefits of low-carb soda, low-carb alcoholic drinks, and more!<\/p>",
+        "desc": ""
+      }
+    },
+    "165295126375fa4c57": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_7130.jpg",
+        "image_pos": "left",
+        "title": "Low Carb Soda",
+        "desc": "<p>If you're looking for a healthy soda that still satisfies your sweet tooth, look no further than Perfy low-carb soda!<\/p><p>Perfy low-carb soda is made with all-natural sweeteners and no artificial ingredients, so it's perfect for people who are watching their carb intake, are health-conscious, or looking for a healthy soda that boosts cognition and mood while mitigating stress and anxiety.<\/p><p>Let's discuss what low carb means, what low carb soda really is, the benefits of low carb, and a few low carb alcoholic drink recipes!<\/p>"
+      }
+    },
+    "16529512915eeb9712": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_6736.jpg",
+        "image_pos": "right",
+        "title": "What is Low Carb?",
+        "desc": "<p>Low-carbohydrate diets have been shown to be effective for weight loss, improved blood sugar control, and reduced risk of chronic diseases like heart disease and diabetes.<\/p><p>There are many different ways to approach a low-carb diet, but the most important piece is to reduce or eliminate carbohydrates from your diet.<\/p><p>This can mean cutting out foods like bread, pasta, rice, potatoes, fruit, juice, and sweets completely or, you can choose to simply reduce the number of carbohydrates you eat at each meal.<\/p>"
+      }
+    },
+    "16529513160e18275a": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
+        "image_pos": "left",
+        "title": "What is Low Carb Soda?",
+        "desc": "<p><a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"><span style=\"text-decoration:underline\">Low-carb soda<\/span><\/a> is a soda alternative that contains fewer carbs than its traditional counterpart.<\/p><p>Some low-carb sodas, like<a href=\"https:\/\/drinkperfy.com\/\"> <span style=\"text-decoration:underline\">Perfy<\/span><\/a>, also contain less sugar, 0g fat, 0g cholesterol, and add in nootropics and adaptogens like L-theanine + ashwagandha or turmeric to boost cognition and mood while mitigating stress and anxiety.<\/p><p>A benefit to using sweeteners like stevia, monk fruit, and allulose is that these sweeteners are all-natural and contain very few carbs.<\/p>"
+      }
+    },
+    "16529513500bbf9e60": {
+      "type": "richtext",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "title": "The Benefits of Low Carb Soda",
+        "subtitle": "<p>There are many benefits to drinking a low-carb soda over a traditional soda, which make it not only the perfect choice for people on a low-carb diet, but also for those who are vegan, gluten-free, keto, health-conscious, or simply seeking a tasty soda!<\/p>",
+        "desc": "<p>Less sugar than traditional sodas.<\/p><p>Keto-friendly!<\/p><p>Fewer calories. This can be helpful for those trying to lose weight or maintain a healthy weight.<\/p><p>No artificial ingredients.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>No GMOs!<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p><p><a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"><span style=\"text-decoration:underline\">Perfy low-carb soda<\/span><\/a> was developed to boost cognition and mood while mitigating stress and anxiety. We do so with a blend of nootropics and adaptogens like L-theanine, ashwagandha, and turmeric.<\/p>"
+      }
+    },
+    "16529514070ed92d45": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 90,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_6460.jpg",
+        "image_pos": "left",
+        "title": "Low Carb Alcoholic Drink Recipes",
+        "desc": "<p>If you're looking for a way to enjoy low-carb alcoholic beverages, consider mixing a low-carb soda, like Perfy, with liquor. From whiskey to vodka, rum, or gin, there are many ways to enjoy an alcoholic beverage while keeping your carb intake low.<\/p><p>Here are a few delicious low-carb alcoholic drink recipes:<\/p>"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "165295124464b05aad",
+    "165295126375fa4c57",
+    "16529512915eeb9712",
+    "16529513160e18275a",
+    "16529513500bbf9e60",
+    "16529514070ed92d45"
   ]
 }
