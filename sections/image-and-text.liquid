@@ -1,0 +1,123 @@
+{{ 'component-image-text.css' | asset_url | stylesheet_tag }}
+
+{% render 'section-styles', section: section %}
+
+<div class="container">
+  {% if section.settings.image %}
+    <div class="main_wrapper d-flex align-center{% if section.settings.image_pos == 'right' %} reverse{% endif %}">
+      <div class="image_wrapper hide--mobile">
+        {% render 'rimage', image: section.settings.image %}
+      </div>
+      <div class="image_wrapper hide--desktop">
+        {% assign mob_image = section.settings.mob_image | default: section.settings.image %}
+        {% render 'rimage', image: mob_image %}
+      </div>
+      <div class="content_wrapper">
+        {% if section.settings.title != blank %}
+          <h2 class="font-heading font-bold h2">{{ section.settings.title }}</h2>
+        {% endif %}
+        {% if section.settings.desc != blank %}
+          <div class="description">{{ section.settings.desc }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Image and text",
+  "class": "section-image-text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "ptop",
+      "label": "Top spacing desktop",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "pbottom",
+      "label": "Bottom spacing desktop",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "ptop_mob",
+      "label": "Top spacing mobile",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "pbottom_mob",
+      "label": "Bottom spacing mobile",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "header",
+      "content": "Cotnents"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mob_image",
+      "label": "Mobile image"
+    },
+    {
+      "type": "select",
+      "options": [
+        {
+          "value": "left",
+          "label": "Image on left"
+        },
+        {
+          "value": "right",
+          "label": "Image on right"
+        }
+      ],
+      "default": "left",
+      "id": "image_pos",
+      "label": "Layout"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image and text"
+    }
+  ]
+}
+{% endschema %}

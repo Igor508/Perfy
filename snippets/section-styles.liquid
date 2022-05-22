@@ -1,0 +1,12 @@
+{% assign set = section.settings %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ set.ptop }}px;
+    padding-bottom: {{ set.pbottom }}px;
+  }
+  @media (max-width: 768px) {
+    padding-top: {{ set.ptop_mob }}px;
+    padding-bottom: {{ set.pbottom_mob }}px;
+  }
+</style>

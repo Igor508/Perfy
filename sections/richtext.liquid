@@ -1,0 +1,98 @@
+{{ 'component-richtext.css' | asset_url | stylesheet_tag }}
+
+{% render 'section-styles', section: section %}
+
+<div class="container">
+  <div class="main_wrapper">
+    <div class="section__header text-center">
+      {% if section.settings.title != blank %}
+        <h2 class="font-heading font-bold h2">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% if section.settings.subtitle != blank %}
+        <div class="subtitle">{{ section.settings.subtitle }}</div>
+      {% endif %}
+    </div>
+    {% if section.settings.desc != blank %}
+      <div class="description bg-white shadow-purple">
+        {{ section.settings.desc }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Richtext",
+  "class": "section-richtext",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "ptop",
+      "label": "Top spacing desktop",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "pbottom",
+      "label": "Bottom spacing desktop",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "ptop_mob",
+      "label": "Top spacing mobile",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "range",
+      "id": "pbottom_mob",
+      "label": "Bottom spacing mobile",
+      "min": 0,
+      "unit": "px",
+      "max": 500,
+      "step": 5,
+      "default": 45
+    },
+    {
+      "type": "header",
+      "content": "Cotnents"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Richtext"
+    }
+  ]
+}
+{% endschema %}
