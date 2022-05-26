@@ -34,8 +34,8 @@
         "title": "Vegan Soda",
         "enable_banner": true,
         "desc": "<p>With the increase in the popularity of veganism, you may be wondering what veganism is and if you can find your favorite foods in vegan options.<\/p><p><strong>Let's discuss these questions in addition to what vegan soda is, what the benefits of vegan soda are, and a few great vegan alcoholic drink options.<\/strong><\/p>",
-        "btn_label": "",
-        "btn_link": "",
+        "btn_label": "Shop Now",
+        "btn_link": "shopify:\/\/products\/fruit-punch",
         "section_bg": "#ffd84f",
         "curve_bg": "#2a0f3f",
         "curve_color": "#ffd84f"

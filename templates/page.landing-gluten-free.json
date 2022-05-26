@@ -35,9 +35,9 @@
         "enable_banner": true,
         "desc": "<p>With the increasing necessity of the gluten-free diet, many new products have emerged to offer a gluten-free alternative to traditional foods, including gluten-free soda.<\/p><p><strong>Let's discuss what gluten-free means, what gluten-free soda is, the benefits of gluten-free, and a few great gluten-free alcoholic drink options you need to try!<\/strong><\/p>",
         "btn_label": "Shop Now",
-        "btn_link": "#",
+        "btn_link": "shopify:\/\/products\/fruit-punch",
         "section_bg": "#ffd84f",
-        "curve_bg": "#fa7964",
+        "curve_bg": "#fb785c",
         "curve_color": "#ffd84f"
       }
     },
@@ -92,33 +92,14 @@
       "type": "image-and-text",
       "settings": {
         "ptop": 45,
-        "pbottom": 45,
+        "pbottom": 90,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
+        "pbottom_mob": 75,
         "image": "shopify:\/\/shop_images\/IMG_6460.jpg",
         "image_pos": "left",
         "title": "What is Perfy Gluten-Free Soda?",
         "enable_banner": false,
         "desc": "<p><a href=\"https:\/\/drinkperfy.com\/products\/fruit-punch\"><span style=\"text-decoration:underline\">Perfy gluten-free soda<\/span><\/a> is made without the use of gluten, so it is a great option for those with gluten sensitivity or celiac disease.<\/p><p>While Perfy is gluten-free, it is also low-carb, low-sugar, keto-friendly, and vegan making it the perfect soda for those who are health-conscious.<\/p><p>Lastly, Perfy contains all-natural ingredients, real fruit juice, and nootropics and adaptogens to boost cognition and mood while mitigating stress and anxiety.<\/p>",
-        "btn_label": "",
-        "btn_link": "",
-        "section_bg": "",
-        "curve_bg": "#fb7b72",
-        "curve_color": "#ffd84f"
-      }
-    },
-    "1652951813b174ff8f": {
-      "type": "image-and-text",
-      "settings": {
-        "ptop": 45,
-        "pbottom": 45,
-        "ptop_mob": 45,
-        "pbottom_mob": 45,
-        "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
-        "image_pos": "right",
-        "title": "Gluten-Free Alcoholic Drink Recipes",
-        "enable_banner": false,
-        "desc": "<p>If you're looking for a way to enjoy gluten-free alcoholic beverages, consider mixing a gluten-free soda, like<a href=\"https:\/\/drinkperfy.com\/\"> <span style=\"text-decoration:underline\">Perfy<\/span><\/a>, with liquor. From vodka to rum or tequila, there are many ways to enjoy an alcoholic beverage while keeping gluten-free.<\/p><p>Here are a few delicious gluten-free alcoholic drink recipes:<\/p>",
         "btn_label": "",
         "btn_link": "",
         "section_bg": "",
@@ -153,6 +134,25 @@
         "curve_color": "text-purple-dark"
       }
     },
+    "1652951813b174ff8f": {
+      "type": "image-and-text",
+      "settings": {
+        "ptop": 45,
+        "pbottom": 45,
+        "ptop_mob": 45,
+        "pbottom_mob": 45,
+        "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
+        "image_pos": "right",
+        "title": "Gluten-Free Alcoholic Drink Recipes",
+        "enable_banner": false,
+        "desc": "<p>If you're looking for a way to enjoy gluten-free alcoholic beverages, consider mixing a gluten-free soda, like<a href=\"https:\/\/drinkperfy.com\/\"> <span style=\"text-decoration:underline\">Perfy<\/span><\/a>, with liquor. From vodka to rum or tequila, there are many ways to enjoy an alcoholic beverage while keeping gluten-free.<\/p><p>Here are a few delicious gluten-free alcoholic drink recipes:<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "",
+        "curve_bg": "#fb7b72",
+        "curve_color": "#ffd84f"
+      }
+    },
     "1653507855b7a2ad8a": {
       "type": "fizz-animation",
       "settings": {}
@@ -166,10 +166,10 @@
     "165350777054d4709b",
     "165292684381cf334d",
     "1652951735d0df2300",
-    "1652951813b174ff8f",
     "16535141304991932b",
     "16529269176c8b73a0",
     "165351417519173a97",
+    "1652951813b174ff8f",
     "1653507855b7a2ad8a"
   ]
 }
