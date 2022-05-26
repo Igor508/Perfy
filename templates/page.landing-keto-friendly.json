@@ -10,6 +10,7 @@
     },
     "1652951849e95678cc": {
       "type": "richtext",
+      "disabled": true,
       "settings": {
         "ptop": 210,
         "pbottom": 45,
@@ -17,33 +18,55 @@
         "pbottom_mob": 45,
         "title": "Keto-Friendly Soda | What is Keto Soda - Benefits of Keto-Friendly Soda",
         "subtitle": "<p>Interested in a keto-friendly alternative to your traditional soda? We discuss what keto-friendly soda is, the benefits of keto-friendly soda, and more!<\/p>",
-        "desc": ""
+        "desc": "",
+        "section_bg": "#2a0f3f"
       }
     },
     "1652951871942f1396": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
-        "pbottom": 45,
+        "ptop": 35,
+        "pbottom": 120,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
-        "image": "shopify:\/\/shop_images\/IMG_7130.jpg",
-        "image_pos": "left",
+        "pbottom_mob": 120,
+        "image": "shopify:\/\/shop_images\/Cans_with_Shadow.png",
+        "image_pos": "right",
         "title": "Keto-Friendly Soda",
-        "desc": "<p>As public concern over obesity and diabetes rises, health-conscious individuals are seeking alternatives to sugary beverages like soda. This awareness has caused an increase in healthier beverage and food options including keto-friendly, low carb, and gluten-free soda options.<\/p><p>Let's discuss what the keto diet is, what keto-friendly soda is, the benefits of <a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"><span style=\"text-decoration:underline\">keto-friendly soda<\/span><\/a>, and also a few keto-friendly alcoholic drinks you can try!<\/p>"
+        "enable_banner": true,
+        "desc": "<p>As public concern over obesity and diabetes rises, health-conscious individuals are seeking alternatives to sugary beverages like soda. This awareness has caused an increase in healthier beverage and food options including keto-friendly, low carb, and gluten-free soda options.<\/p><p><strong>Let's discuss what the keto diet is, what keto-friendly soda is, the benefits of <\/strong><a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"><span style=\"text-decoration:underline\"><strong>keto-friendly soda<\/strong><\/span><\/a><strong>, and also a few keto-friendly alcoholic drinks you can try!<\/strong><\/p>",
+        "btn_label": "Shop Now",
+        "btn_link": "#",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fb7b74",
+        "curve_color": "#ffd84f"
       }
     },
     "1652951888f0108c70": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
+        "ptop": 120,
         "pbottom": 45,
-        "ptop_mob": 45,
+        "ptop_mob": 90,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6736.jpg",
-        "image_pos": "right",
+        "image_pos": "left",
         "title": "What is the Keto Diet?",
-        "desc": "<p>The ketogenic diet is a high-protein, high-fat, and low-carbohydrate short-term diet that has been shown to help with weight loss. When you follow a keto diet, your body runs out of carbs and begins to break down protein and fat for energy. This process is called ketosis.<\/p><p>Historically, the keto diet could be difficult to follow as it requires a complete change in eating habits, however, with a growing base of keto-friendly food options, you can now eat and drink low-carb while still having all the comforts of a non-keto diet!<\/p>"
+        "enable_banner": false,
+        "desc": "<p>The ketogenic diet is a high-protein, high-fat, and low-carbohydrate short-term diet that has been shown to help with weight loss. When you follow a keto diet, your body runs out of carbs and begins to break down protein and fat for energy. This process is called ketosis.<\/p><p>Historically, the keto diet could be difficult to follow as it requires a complete change in eating habits, however, with a growing base of keto-friendly food options, you can now eat and drink low-carb while still having all the comforts of a non-keto diet!<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
+      }
+    },
+    "1653509301ccca9ab6": {
+      "type": "full-width-decoration",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/decoration-desktop_d26e76c9-f4c3-4f96-9e27-ae303bb2e03a.png",
+        "image_mobile": "shopify:\/\/shop_images\/decoration-mobile_671b5b23-0f2d-4e57-bbfd-ad1c6e05de0c.png",
+        "use_animations": true,
+        "title": "Perfy's Features"
       }
     },
     "165295190575f6b26a": {
@@ -52,37 +75,68 @@
         "ptop": 45,
         "pbottom": 45,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
+        "pbottom_mob": 75,
         "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
-        "image_pos": "left",
+        "image_pos": "right",
         "title": "What is Keto-Friendly Soda?",
-        "desc": "<p>Keto-friendly soda is a low-carb alternative to traditional soda that contains low sugar and natural ingredients. Perfy keto-friendly soda is sweetened with alternative sweeteners, such as stevia, monk fruit, and allulose, contains real fruit juice, and L-theanine, ashwagandha, or turmeric. Keto-friendly sodas like <a href=\"https:\/\/drinkperfy.com\/\"><span style=\"text-decoration:underline\">Perfy<\/span><\/a> are a great way to enjoy a refreshing drink without the carbs, and artificial sweeteners that come with regular soda.<\/p><p>Perfy keto-friendly soda comes in a variety of flavors, including<a href=\"https:\/\/drinkperfy.com\/products\/fruit-punch\"> <span style=\"text-decoration:underline\">Fruit Punch<\/span><\/a>,<a href=\"https:\/\/drinkperfy.com\/products\/blood-orange-yuzu\"> <span style=\"text-decoration:underline\">Blood Orange Yuzu<\/span><\/a>, and<a href=\"https:\/\/drinkperfy.com\/products\/tropical-citrus\"> <span style=\"text-decoration:underline\">Tropical Citrus<\/span><\/a>.<\/p>"
+        "enable_banner": false,
+        "desc": "<p>Keto-friendly soda is a low-carb alternative to traditional soda that contains low sugar and natural ingredients. Perfy keto-friendly soda is sweetened with alternative sweeteners, such as stevia, monk fruit, and allulose, contains real fruit juice, and L-theanine, ashwagandha, or turmeric. Keto-friendly sodas like <a href=\"https:\/\/drinkperfy.com\/\"><span style=\"text-decoration:underline\">Perfy<\/span><\/a> are a great way to enjoy a refreshing drink without the carbs, and artificial sweeteners that come with regular soda.<\/p><p>Perfy keto-friendly soda comes in a variety of flavors, including<a href=\"https:\/\/drinkperfy.com\/products\/fruit-punch\"> <span style=\"text-decoration:underline\">Fruit Punch<\/span><\/a>,<a href=\"https:\/\/drinkperfy.com\/products\/blood-orange-yuzu\"> <span style=\"text-decoration:underline\">Blood Orange Yuzu<\/span><\/a>, and<a href=\"https:\/\/drinkperfy.com\/products\/tropical-citrus\"> <span style=\"text-decoration:underline\">Tropical Citrus<\/span><\/a>.<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
+      }
+    },
+    "1653515288eecb808d": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "above-testimonials",
+        "curve_color": "text-purple-dark"
       }
     },
     "1652951931a1c4ec3c": {
       "type": "richtext",
       "settings": {
         "ptop": 45,
-        "pbottom": 45,
+        "pbottom": 90,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
+        "pbottom_mob": 75,
         "title": "The Benefits of Keto-Friendly Soda",
         "subtitle": "<p>Keto-friendly sodas, like Perfy, offer a variety of benefits compared to traditional sodas. Here are a few of the benefits of Perfy keto-friendly soda:<\/p>",
-        "desc": "<p>Low-carb, making it a great choice for those watching their weight.<\/p><p>Low in sugar, so you won't experience the crash or glycemic impact that comes with drinking sugary beverages.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>No GMOs!<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p><p>Perfy keto-friendly soda was developed to boost cognition and mood while mitigating stress and anxiety. We do so with a blend of nootropics and adaptogens like L-theanine, ashwagandha, and turmeric.<\/p>"
+        "desc": "<p>Low-carb, making it a great choice for those watching their weight.<\/p><p>Low in sugar, so you won't experience the crash or glycemic impact that comes with drinking sugary beverages.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>No GMOs!<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p><p>Perfy keto-friendly soda was developed to boost cognition and mood while mitigating stress and anxiety. We do so with a blend of nootropics and adaptogens like L-theanine, ashwagandha, and turmeric.<\/p>",
+        "section_bg": "#2a0f3f"
+      }
+    },
+    "16535152990d95bc72": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "below-testimonials",
+        "curve_color": "text-purple-dark"
       }
     },
     "1652951978429f48b2": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
+        "ptop": 120,
         "pbottom": 90,
-        "ptop_mob": 45,
+        "ptop_mob": 75,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6460.jpg",
         "image_pos": "left",
         "title": "Keto-Friendly Alcoholic Drink Recipes",
-        "desc": "<p>If you're looking for a way to enjoy alcoholic beverages on the keto diet, consider mixing a low-carb soda with liquor. From whiskey to vodka, brandy, cognac, or gin, there are many ways to stay within your carb limit while enjoying an alcoholic drink.<\/p><p>Here are a few delicious keto-friendly alcoholic drink recipes:<\/p>"
+        "enable_banner": false,
+        "desc": "<p>If you're looking for a way to enjoy alcoholic beverages on the keto diet, consider mixing a low-carb soda with liquor. From whiskey to vodka, brandy, cognac, or gin, there are many ways to stay within your carb limit while enjoying an alcoholic drink.<\/p><p>Here are a few delicious keto-friendly alcoholic drink recipes:<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
       }
+    },
+    "16535092425724c41b": {
+      "type": "fizz-animation",
+      "settings": {}
     }
   },
   "order": [
@@ -90,8 +144,12 @@
     "1652951849e95678cc",
     "1652951871942f1396",
     "1652951888f0108c70",
+    "1653509301ccca9ab6",
     "165295190575f6b26a",
+    "1653515288eecb808d",
     "1652951931a1c4ec3c",
-    "1652951978429f48b2"
+    "16535152990d95bc72",
+    "1652951978429f48b2",
+    "16535092425724c41b"
   ]
 }

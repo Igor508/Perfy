@@ -10,6 +10,7 @@
     },
     "1652951459afd5e6bf": {
       "type": "richtext",
+      "disabled": true,
       "settings": {
         "ptop": 210,
         "pbottom": 45,
@@ -17,33 +18,55 @@
         "pbottom_mob": 45,
         "title": "Low-Sugar Soda | Benefits of Low-Sugar - Low-Sugar Alcoholic Drinks",
         "subtitle": "<p>Interested in a low-sugar alternative to your traditional soda? We discuss what low-sugar soda is, the benefits of low-sugar soda, and more!<\/p>",
-        "desc": ""
+        "desc": "",
+        "section_bg": "#2a0f3f"
       }
     },
     "165295147979cc5ae1": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
-        "pbottom": 45,
+        "ptop": 35,
+        "pbottom": 120,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
-        "image": "shopify:\/\/shop_images\/IMG_7130.jpg",
-        "image_pos": "left",
+        "pbottom_mob": 120,
+        "image": "shopify:\/\/shop_images\/Cans_with_Shadow.png",
+        "image_pos": "right",
         "title": "Low Sugar Soda",
-        "desc": "<p>As the concern for sugar intake has grown, health-conscious individuals are in search of low-sugar alternatives to their traditional favorite foods and beverages. With this movement, low-sugar soda alternatives like Perfy now offer all the familiarity of soda while containing just 3g of sugar, 20 calories, and 0g of fat.<\/p><p>While some might think that soda is loaded with tons of sugar, we are going to discuss what low-sugar is, what low-sugar sodas are, the benefits of low-sugar sodas, and a few great low-sugar alcoholic drink options!<\/p>"
+        "enable_banner": true,
+        "desc": "<p>As the concern for sugar intake has grown, health-conscious individuals are in search of low-sugar alternatives to their traditional favorite foods and beverages. With this movement, low-sugar soda alternatives like Perfy now offer all the familiarity of soda while containing just 3g of sugar, 20 calories, and 0g of fat.<\/p><p><strong>While some might think that soda is loaded with tons of sugar, we are going to discuss what low-sugar is, what low-sugar sodas are, the benefits of low-sugar sodas, and a few great low-sugar alcoholic drink options!<\/strong><\/p>",
+        "btn_label": "Shop Now",
+        "btn_link": "#",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
       }
     },
     "16529514952b7dbd93": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
+        "ptop": 120,
         "pbottom": 45,
-        "ptop_mob": 45,
+        "ptop_mob": 90,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6736.jpg",
-        "image_pos": "right",
+        "image_pos": "left",
         "title": "What is Low Sugar?",
-        "desc": "<p>Low sugar is a term used to describe food or drink that has been reduced in sugar content. This can be done for a variety of reasons, such as weight loss or health concerns. Low sugar drinks and food options are not necessarily sugar-free, but they do have a lower sugar content than their regular counterparts.<\/p><p>In some cases, sugar might be replaced with artificial sweeteners to reduce the amount of sugar, but in cases like<a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"> <span style=\"text-decoration:underline\">Perfy low-sugar soda<\/span><\/a>, no artificial sweeteners are used. Instead, natural sweeteners like stevia, monk fruit, and allulose are used to sweeten the beverage instead of traditional or artificial sweeteners.<\/p>"
+        "enable_banner": false,
+        "desc": "<p>Low sugar is a term used to describe food or drink that has been reduced in sugar content. This can be done for a variety of reasons, such as weight loss or health concerns. Low sugar drinks and food options are not necessarily sugar-free, but they do have a lower sugar content than their regular counterparts.<\/p><p>In some cases, sugar might be replaced with artificial sweeteners to reduce the amount of sugar, but in cases like<a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"> <span style=\"text-decoration:underline\">Perfy low-sugar soda<\/span><\/a>, no artificial sweeteners are used. Instead, natural sweeteners like stevia, monk fruit, and allulose are used to sweeten the beverage instead of traditional or artificial sweeteners.<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
+      }
+    },
+    "1653509213c200786d": {
+      "type": "full-width-decoration",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/decoration-desktop_d26e76c9-f4c3-4f96-9e27-ae303bb2e03a.png",
+        "image_mobile": "shopify:\/\/shop_images\/decoration-mobile_671b5b23-0f2d-4e57-bbfd-ad1c6e05de0c.png",
+        "use_animations": true,
+        "title": "Perfy's Features"
       }
     },
     "1652951518142beb49": {
@@ -54,9 +77,15 @@
         "ptop_mob": 45,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6460.jpg",
-        "image_pos": "left",
+        "image_pos": "right",
         "title": "What is Low Sugar Soda?",
-        "desc": "<p>Low sugar soda is a soda that has been made with lower amounts of sugar than traditional sodas.<\/p><p>Low sugar can be accomplished in a number of ways, such as using artificial sweeteners or reducing the amount of syrup used. However, health-conscious brands, like<a href=\"https:\/\/drinkperfy.com\/\"> <span style=\"text-decoration:underline\">Perfy<\/span><\/a>, utilize natural sweeteners like stevia, monk fruit, and allulose to achieve the same familiar sweetness consumers are familiar with.<\/p><p>In addition to having lower sugar levels, low sugar sodas typically have fewer calories than regular sodas and are typically a better option for those watching their calorie intake.<\/p>"
+        "enable_banner": false,
+        "desc": "<p>Low sugar soda is a soda that has been made with lower amounts of sugar than traditional sodas.<\/p><p>Low sugar can be accomplished in a number of ways, such as using artificial sweeteners or reducing the amount of syrup used. However, health-conscious brands, like<a href=\"https:\/\/drinkperfy.com\/\"> <span style=\"text-decoration:underline\">Perfy<\/span><\/a>, utilize natural sweeteners like stevia, monk fruit, and allulose to achieve the same familiar sweetness consumers are familiar with.<\/p><p>In addition to having lower sugar levels, low sugar sodas typically have fewer calories than regular sodas and are typically a better option for those watching their calorie intake.<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
       }
     },
     "1652951539705772cb": {
@@ -67,35 +96,66 @@
         "ptop_mob": 45,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
-        "image_pos": "right",
+        "image_pos": "left",
         "title": "What is Used to Sweeten Perfy Soda?",
-        "desc": "<p>Perfy utilizes three different sugar alternatives to create their low sugar soda.<\/p><p>The first is Allulose, which is a rare sugar that occurs naturally in fruits like figs and raisins. It is a little less sweet than sugar but has almost no calories.<\/p><p>The second sweetener used is monk fruit, a sweetener that is extracted from the monk fruit plant. It is about 100 times sweeter than sugar and contains no calories.<\/p><p>The third sweetener used in Perfy low sugar soda is stevia, which is a plant-based sweetener that is about 100 to 300 times sweeter than table sugar.<\/p>"
+        "enable_banner": false,
+        "desc": "<p>Perfy utilizes three different sugar alternatives to create their low sugar soda.<\/p><p>The first is Allulose, which is a rare sugar that occurs naturally in fruits like figs and raisins. It is a little less sweet than sugar but has almost no calories.<\/p><p>The second sweetener used is monk fruit, a sweetener that is extracted from the monk fruit plant. It is about 100 times sweeter than sugar and contains no calories.<\/p><p>The third sweetener used in Perfy low sugar soda is stevia, which is a plant-based sweetener that is about 100 to 300 times sweeter than table sugar.<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
+      }
+    },
+    "1653515237283eb56d": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "above-testimonials",
+        "curve_color": "text-purple-dark"
       }
     },
     "1652951561435ffb3c": {
       "type": "richtext",
       "settings": {
         "ptop": 45,
-        "pbottom": 45,
+        "pbottom": 90,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
+        "pbottom_mob": 70,
         "title": "The Benefits of Perfy Low Sugar Soda",
         "subtitle": "<p>There are many benefits to drinking Perfy low-sugar soda over regular soda.<\/p>",
-        "desc": "<p>Less sugar than traditional sodas.<\/p><p>Keto-friendly!<\/p><p>Fewer calories. This can be helpful for those trying to lose weight or maintain a healthy weight.<\/p><p>No artificial ingredients.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>No GMOs!<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p><p><a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"><span style=\"text-decoration:underline\">Perfy low-sugar soda<\/span><\/a> was developed to boost cognition and mood while mitigating stress and anxiety. We do so with a blend of nootropics and adaptogens like L-theanine, ashwagandha, and turmeric.<\/p>"
+        "desc": "<p>Less sugar than traditional sodas.<\/p><p>Keto-friendly!<\/p><p>Fewer calories. This can be helpful for those trying to lose weight or maintain a healthy weight.<\/p><p>No artificial ingredients.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>No GMOs!<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p><p><a href=\"https:\/\/drinkperfy.com\/products\/fruity-variety-pack\"><span style=\"text-decoration:underline\">Perfy low-sugar soda<\/span><\/a> was developed to boost cognition and mood while mitigating stress and anxiety. We do so with a blend of nootropics and adaptogens like L-theanine, ashwagandha, and turmeric.<\/p>",
+        "section_bg": "#2a0f3f"
+      }
+    },
+    "1653515246969ccbc0": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "below-testimonials",
+        "curve_color": "text-purple-dark"
       }
     },
     "1652951613b3f2014e": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
+        "ptop": 120,
         "pbottom": 45,
-        "ptop_mob": 45,
+        "ptop_mob": 75,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
-        "image_pos": "left",
+        "image_pos": "right",
         "title": "Low Sugar Alcoholic Drink Recipes",
-        "desc": "<p>If you're looking for a way to enjoy low-sugar alcoholic beverages, consider mixing a low-sugar soda, like Perfy, with liquor. From whiskey to vodka, brandy, cognac, or gin, there are many ways to enjoy an alcoholic beverage while keeping your sugar intake low.<\/p><p>Here are a few delicious low-sugar alcoholic drink recipes:<\/p>"
+        "enable_banner": false,
+        "desc": "<p>If you're looking for a way to enjoy low-sugar alcoholic beverages, consider mixing a low-sugar soda, like Perfy, with liquor. From whiskey to vodka, brandy, cognac, or gin, there are many ways to enjoy an alcoholic beverage while keeping your sugar intake low.<\/p><p>Here are a few delicious low-sugar alcoholic drink recipes:<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
       }
+    },
+    "16535091523f74ebcf": {
+      "type": "fizz-animation",
+      "settings": {}
     }
   },
   "order": [
@@ -103,9 +163,13 @@
     "1652951459afd5e6bf",
     "165295147979cc5ae1",
     "16529514952b7dbd93",
+    "1653509213c200786d",
     "1652951518142beb49",
     "1652951539705772cb",
+    "1653515237283eb56d",
     "1652951561435ffb3c",
-    "1652951613b3f2014e"
+    "1653515246969ccbc0",
+    "1652951613b3f2014e",
+    "16535091523f74ebcf"
   ]
 }

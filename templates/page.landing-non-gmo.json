@@ -10,6 +10,7 @@
     },
     "16529864412520e64b": {
       "type": "richtext",
+      "disabled": true,
       "settings": {
         "ptop": 210,
         "pbottom": 45,
@@ -17,59 +18,106 @@
         "pbottom_mob": 45,
         "title": "Non-GMO Soda | Benefits of Non-GMO Soda - Non-GMO Alcoholic Drinks",
         "subtitle": "<p>Interested in a healthy non-gmo alternative to soda? We discuss what non-gmo is, what non-gmo soda is, the benefits of non-gmo soda, and non-gmo alcoholic drinks.<\/p>",
-        "desc": ""
+        "desc": "",
+        "section_bg": "#2a0f3f"
       }
     },
     "165298646902a7b4c9": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
-        "pbottom": 45,
+        "ptop": 35,
+        "pbottom": 120,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
-        "image": "shopify:\/\/shop_images\/IMG_7130.jpg",
-        "image_pos": "left",
+        "pbottom_mob": 120,
+        "image": "shopify:\/\/shop_images\/Cans_with_Shadow.png",
+        "image_pos": "right",
         "title": "Non-GMO Soda",
-        "desc": "<p>Have you ever seen \"Non-GMO\" on a food label and wondered what it meant? Non-GMO means that the food does not contain genetically modified organisms. GMOs refer to plants or animals which have been modified in ways that do not occur naturally.<br\/><br\/>In food and beverage, when a label displays \"Non-GMO\" this means that the particular food or beverage item does not contain any ingredients which have been modified.<br\/><br\/>Now, let's further discuss what non-GMO sodas are and why Perfy soda is the perfect Non-GMO soda.<\/p>"
+        "enable_banner": true,
+        "desc": "<p>Have you ever seen \"Non-GMO\" on a food label and wondered what it meant? Non-GMO means that the food does not contain genetically modified organisms. GMOs refer to plants or animals which have been modified in ways that do not occur naturally.<\/p><p>In food and beverage, when a label displays \"Non-GMO\" this means that the particular food or beverage item does not contain any ingredients which have been modified.<\/p><p><strong>Now, let's further discuss what non-GMO sodas are and why Perfy soda is the perfect Non-GMO soda.<\/strong><\/p>",
+        "btn_label": "Shop Now",
+        "btn_link": "#",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fc7e8a",
+        "curve_color": "#ffd84f"
       }
     },
     "1652986496e4c875e4": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
+        "ptop": 120,
         "pbottom": 45,
         "ptop_mob": 45,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6736.jpg",
-        "image_pos": "right",
+        "image_pos": "left",
         "title": "What is Perfy Non-GMO Soda?",
-        "desc": "<p>Perfy Non-GMO soda is a delicious alternative to traditional sodas and Perfy does not contain ANY GMOs. Perfy is made with all-natural ingredients including natural sweeteners like stevia, allulose, and monk fruit, as well as 100% real fruit juice.<br\/><br\/>Perfy tastes like the sodas you are familiar with but offers a healthy alternative with additional benefits like a boost in cognition and mood while mitigating stress and anxiety.<\/p>"
+        "enable_banner": false,
+        "desc": "<p>Perfy Non-GMO soda is a delicious alternative to traditional sodas and Perfy does not contain ANY GMOs. Perfy is made with all-natural ingredients including natural sweeteners like stevia, allulose, and monk fruit, as well as 100% real fruit juice.<br\/><br\/>Perfy tastes like the sodas you are familiar with but offers a healthy alternative with additional benefits like a boost in cognition and mood while mitigating stress and anxiety.<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
+      }
+    },
+    "16535089533b39884c": {
+      "type": "full-width-decoration",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/decoration-desktop_d26e76c9-f4c3-4f96-9e27-ae303bb2e03a.png",
+        "image_mobile": "shopify:\/\/shop_images\/decoration-mobile_671b5b23-0f2d-4e57-bbfd-ad1c6e05de0c.png",
+        "use_animations": true,
+        "title": "Perfy's Features"
+      }
+    },
+    "165351459954b9a62a": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "above-testimonials",
+        "curve_color": "text-purple-dark"
       }
     },
     "1652986553a5b71e1e": {
       "type": "richtext",
       "settings": {
         "ptop": 45,
-        "pbottom": 45,
+        "pbottom": 90,
         "ptop_mob": 45,
-        "pbottom_mob": 45,
+        "pbottom_mob": 75,
         "title": "The Benefits of Drinking Perfy Non-GMO Soda",
         "subtitle": "<p>When it comes to drinking a non-GMO soda, it really is a no-brainer. But speaking of the brain, Perfy contains L-theanine, ashwagandha, and turmeric to help with cognition and mood while reducing stress and anxiety.<\/p><p>In addition, Perfy offers a variety of benefits including:<\/p>",
-        "desc": "<p>Less sugar than traditional sodas.<\/p><p>Keto-friendly!<\/p><p>Fewer calories. This can be helpful for those trying to lose weight or maintain a healthy weight.<\/p><p>No artificial ingredients.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p>"
+        "desc": "<p>Less sugar than traditional sodas.<\/p><p>Keto-friendly!<\/p><p>Fewer calories. This can be helpful for those trying to lose weight or maintain a healthy weight.<\/p><p>No artificial ingredients.<\/p><p>Caffeine-free, so you can enjoy it any time of day.<\/p><p>Gluten-free, allowing those following a gluten-free diet to enjoy a refreshing soda.<\/p><p>Vegan, making it a great choice for those following a vegan lifestyle.<\/p>",
+        "section_bg": "#2a0f3f"
+      }
+    },
+    "165351461134b6ffab": {
+      "type": "section-curve",
+      "settings": {
+        "curve_id": "below-testimonials",
+        "curve_color": "text-purple-dark"
       }
     },
     "16529865250782c3b0": {
       "type": "image-and-text",
       "settings": {
-        "ptop": 45,
+        "ptop": 120,
         "pbottom": 90,
-        "ptop_mob": 45,
+        "ptop_mob": 75,
         "pbottom_mob": 45,
         "image": "shopify:\/\/shop_images\/IMG_6657.jpg",
-        "image_pos": "left",
+        "image_pos": "right",
         "title": "Non-GMO Alcoholic Drink Recipes",
-        "desc": "<p>If you're looking for a way to enjoy alcoholic beverages without GMOs, consider mixing a Perfy soda with liquor. From whiskey to gin, tequila, mezcal, or rum, there are many ways to enjoy an alcoholic beverage while keeping away from GMOs.<br\/><br\/>Here are a few delicious alcoholic drink recipes you need to try:<\/p>"
+        "enable_banner": false,
+        "desc": "<p>If you're looking for a way to enjoy alcoholic beverages without GMOs, consider mixing a Perfy soda with liquor. From whiskey to gin, tequila, mezcal, or rum, there are many ways to enjoy an alcoholic beverage while keeping away from GMOs.<br\/><br\/>Here are a few delicious alcoholic drink recipes you need to try:<\/p>",
+        "btn_label": "",
+        "btn_link": "",
+        "section_bg": "#ffd84f",
+        "curve_bg": "#fa7964",
+        "curve_color": "#ffd84f"
       }
+    },
+    "16535089647aec2af0": {
+      "type": "fizz-animation",
+      "settings": {}
     }
   },
   "order": [
@@ -77,7 +125,11 @@
     "16529864412520e64b",
     "165298646902a7b4c9",
     "1652986496e4c875e4",
+    "16535089533b39884c",
+    "165351459954b9a62a",
     "1652986553a5b71e1e",
-    "16529865250782c3b0"
+    "165351461134b6ffab",
+    "16529865250782c3b0",
+    "16535089647aec2af0"
   ]
 }
