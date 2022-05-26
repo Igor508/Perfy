@@ -2,9 +2,15 @@
 
 {% render 'section-styles', section: section %}
 
+<style>
+  #shopify-section-{{ section.id }} {
+    background: {{ section.settings.section_bg }};
+  }
+</style>
+
 <div class="container">
   <div class="main_wrapper">
-    <div class="section__header text-center">
+    <div class="section__header">
       {% if section.settings.title != blank %}
         <h2 class="font-heading font-bold h2">{{ section.settings.title }}</h2>
       {% endif %}
@@ -13,7 +19,7 @@
       {% endif %}
     </div>
     {% if section.settings.desc != blank %}
-      <div class="description bg-white shadow-purple">
+      <div class="description rounded-lg bg-white shadow-yellow">
         {{ section.settings.desc }}
       </div>
     {% endif %}
@@ -71,7 +77,7 @@
     },
     {
       "type": "header",
-      "content": "Cotnents"
+      "content": "Contents"
     },
     {
       "type": "text",
@@ -87,6 +93,16 @@
       "type": "richtext",
       "id": "desc",
       "label": "Description"
+    },
+    {
+      "type": "header",
+      "content":"Color"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section Background",
+      "default": "#2a0f3f"
     }
   ],
   "presets": [

@@ -2,9 +2,17 @@
 
 {% render 'section-styles', section: section %}
 
-<div class="container">
+{% if section.settings.enable_banner %}
+<style>
+  #shopify-section-{{ section.id }} {
+    background: {{ section.settings.section_bg }};
+  }
+</style>
+{% endif %}
+
+<div class="container flex xl:max-w-screen-2xl">
   {% if section.settings.image %}
-    <div class="main_wrapper d-flex align-center{% if section.settings.image_pos == 'right' %} reverse{% endif %}">
+    <div class="main_wrapper d-flex{% unless section.settings.enable_banner %} align-center{% endunless %}{% if section.settings.image_pos == 'right' %} reverse{% endif %} {% if section.settings.enable_banner %}banner_layout{% endif %}">
       <div class="image_wrapper hide--mobile">
         {% render 'rimage', image: section.settings.image %}
       </div>
@@ -14,15 +22,35 @@
       </div>
       <div class="content_wrapper">
         {% if section.settings.title != blank %}
-          <h2 class="font-heading font-bold h2">{{ section.settings.title }}</h2>
+          <h2 class="font-heading font-bold h2 {% if section.settings.enable_banner %}text-large{% endif %}">{{ section.settings.title }}</h2>
         {% endif %}
         {% if section.settings.desc != blank %}
-          <div class="description">{{ section.settings.desc }}</div>
+          <div class="description {% if section.settings.enable_banner %}w-2/3 lg:w-full{% endif %}">{{ section.settings.desc }}</div>
+        {% endif %}
+        {% if section.settings.btn_label != blank and section.settings.btn_link %}
+          <div class="btn_wrapper">
+            <a href="{{ section.settings.btn_link }}" class="{% if section.settings.enable_banner %}btn btn-primary btn-hero z-30{% else %}btn btn-primary btn-border{% endif %}">{{ section.settings.btn_label }}</a>
+          </div>
         {% endif %}
       </div>
     </div>
   {% endif %}
 </div>
+
+{% if section.settings.enable_banner %}
+  <div class="h-auto text-purple-dark w-full z-10 -mt-1 svg-wrapper" style="background:{{ section.settings.curve_bg }}">
+    <div class="md:hidden svg-wrap w-full rotate-180 text-purple-dark">
+      <svg viewBox="0 0 375 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M130.222 32.4567C202.809 34.7258 254.559 14.1525 316.728 5.71796C336.485 3.08698 356.241 1.2921 375 0.0676079L375 59.6289L316.728 59.6289L130.222 59.6289L0 59.6289L4.79561e-06 4.77344C29.3923 16.1083 69.4971 30.5584 130.222 32.4567Z" fill="{{ section.settings.curve_color }}"></path>
+      </svg>
+    </div>
+    <div class="hidden md:block svg-wrap w-full rotate-180 text-purple-dark">
+      <svg viewBox="0 0 1440 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1458 32.5001L1376.78 32.5001C1295.56 32.5001 1133.11 32.5001 970.667 54.1329C808.222 76.1719 673 129.929 483.333 124C274 117.456 158.444 53.8281 77.2223 27.1172L-3.99998 -5.74179e-06L-4 195L77.2223 195C158.444 195 320.889 195 483.333 195C645.778 195 808.222 195 970.667 195C1133.11 195 1295.56 195 1376.78 195L1458 195L1458 32.5001Z" fill="{{ section.settings.curve_color }}"></path>
+      </svg>
+    </div>
+  </div>
+{% endif %}
 
 {% schema %}
 {
@@ -75,7 +103,7 @@
     },
     {
       "type": "header",
-      "content": "Cotnents"
+      "content": "Contents"
     },
     {
       "type": "image_picker",
@@ -109,9 +137,50 @@
       "label": "Title"
     },
     {
+      "type": "checkbox",
+      "id": "enable_banner",
+      "label": "Make banner section"
+    },
+    {
       "type": "richtext",
       "id": "desc",
       "label": "Description"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Color"
+    },
+    {
+      "type": "color",
+      "id": "section_bg",
+      "label": "Section background",
+      "default": "#FFD84F"
+    },
+    {
+      "type": "color",
+      "id": "curve_bg",
+      "label": "Curve background",
+      "default": "#fa7964"
+    },
+    {
+      "type": "color",
+      "id": "curve_color",
+      "label": "Curve color",
+      "default": "#ffd84f"
     }
   ],
   "presets": [

@@ -1,3 +1,7 @@
+#shopify-section-header {
+  z-index: 101;
+}
+
 .d-flex {
   display: flex;
 }
@@ -22,6 +26,28 @@
   }
 }
 
+.section-image-text {
+  position: relative;
+}
+
+.section-image-text .svg-wrapper {
+  bottom: 0px;
+  position: absolute;
+  z-index: 9;
+}
+
+.section-image-text .svg-wrapper svg {
+  margin-top: -1px;
+}
+
+.section-image-text .container {
+  /* max-width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem; */
+  z-index: 10;
+  /* position: relative; */
+}
+
 .section-image-text .main_wrapper {
   justify-content: space-between;
 }
@@ -34,14 +60,79 @@
 .section-image-text .main_wrapper .content_wrapper {
   min-width: calc(50% - 30px);
   max-width: calc(50% - 30px);
+  position: relative;
+  z-index: 99;
+}
+
+.section-image-text .main_wrapper .content_wrapper h2.text-large {
+  font-size: 120px;
+  line-height: 1;
 }
 
 .section-image-text .main_wrapper .content_wrapper .description {
   margin-top: 30px;
 }
 
+.section-image-text .main_wrapper .content_wrapper .description p {
+  font-size: 1.625rem;
+}
+
 .section-image-text .main_wrapper .content_wrapper .description a {
   color: #0000ff;
+}
+
+.section-image-text .main_wrapper .content_wrapper .btn_wrapper {
+  margin-top: 3rem;
+}
+
+.section-image-text .main_wrapper.banner_layout {
+  justify-content: flex-end;
+}
+
+.section-image-text .main_wrapper.banner_layout .content_wrapper {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.section-image-text .main_wrapper.banner_layout .image_wrapper {
+  min-width: 40vw;
+  max-width: 40vw;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 99;
+}
+
+
+@media (max-width: 768px) {
+  .section-image-text .main_wrapper.banner_layout .content_wrapper {
+    padding-top: 45px;
+    padding-bottom: 0px;
+    text-align: left;
+  }
+  .section-image-text .main_wrapper .content_wrapper h2.text-large {
+    font-size: 5rem;
+  }
+  .section-image-text .main_wrapper.banner_layout .image_wrapper {
+    min-width: 210px;
+    max-width: 210px;
+    top: unset;
+    bottom: -4rem;
+    right: -1rem;
+  }
+  .section-image-text .main_wrapper .content_wrapper .description p {
+    font-size: 1.375rem;
+  }
+}
+
+
+.section-image-text .main_wrapper.banner_layout .description {
+  margin-top: 1rem;
+}
+
+
+.section-image-text .main_wrapper.banner_layout .description p:not(:first-child) {
+  margin-top: 25px;
 }
 
 @media (max-width: 768px) {
@@ -60,5 +151,9 @@
   }
   .section-image-text .main_wrapper .content_wrapper .description {
     margin-top: 10px;
+  }
+  
+  .section-image-text .main_wrapper .content_wrapper .btn_wrapper {
+    margin-top: 1.5rem;
   }
 }
